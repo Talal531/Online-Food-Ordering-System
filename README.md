@@ -1,4 +1,4 @@
 # Online-Food-Ordering-System
 
-#npm install // for install all packeges
+#npm install    
 #npm start
