@@ -1,0 +1,145 @@
+{
+    "home": {
+        "slider": [{
+                "id": "1",
+                "cover": "https://revolutioncdn-themepunchgbr.netdna-ssl.com/wp-content/uploads/2015/08/food2.jpg"
+            },
+            {
+                "id": "2",
+                "cover": "https://revolutioncdn-themepunchgbr.netdna-ssl.com/wp-content/uploads/2015/08/food2.jpg"
+            }
+        ],
+
+        "city": [{
+                "id": "c1",
+                "type": "lg",
+                "img": "https://www.samaa.tv/wp-content/uploads/2016/10/mazar-e-quaid-640x480.jpg",
+                "title": "Karachi",
+                "author": "author1",
+                "links": "/karachi"
+            },
+            {
+                "id": "c2",
+                "type": "lg",
+                "img": "http://1.bp.blogspot.com/-EHi_JSUicGc/VLqJiLQKQII/AAAAAAAAFqA/3_EdQWd5l2A/s1600/minor-e-pakistan-latest-pictures4.jpg",
+                "title": "Lahore",
+                "author": "author2",
+                "links": "/lahore"
+            },
+            {
+                "id": "c3",
+                "type": "lg",
+                "img": "http://minhajimages.kortechx.netdna-cdn.com/images-sliders/Minhaj-ul-Quran_Islamabad_01.jpg",
+                "title": "Islamabad",
+                "author": "author3",
+                "links": "/isalmabad"
+            },
+            {
+                "id": "c4",
+                "type": "lg",
+                "img": "https://www.youlinmagazine.com/articles/multan-the-city-of-saints.jpg",
+                "title": "Multan",
+                "author": "author4",
+                "links": "/multan"
+            },
+            {
+                "id": "c5",
+                "type": "lg",
+                "img": "http://4.bp.blogspot.com/-dozogn9cUvI/UBFSMAogpXI/AAAAAAAAAeo/9NDWOtr2q8U/s1600/7-railway-track-from-rohri-to-quetta.jpg",
+                "title": "Quetta",
+                "author": "author5",
+                "links": "/quetta"
+            },
+            {
+                "id": "c6",
+                "type": "lg",
+                "img": "http://4.bp.blogspot.com/-dozogn9cUvI/UBFSMAogpXI/AAAAAAAAAeo/9NDWOtr2q8U/s1600/7-railway-track-from-rohri-to-quetta.jpg",
+                "title": "Image5",
+                "author": "author5",
+                "links": "/quetta"
+            },
+            {
+                "id": "c7",
+                "type": "lg",
+                "img": "http://4.bp.blogspot.com/-dozogn9cUvI/UBFSMAogpXI/AAAAAAAAAeo/9NDWOtr2q8U/s1600/7-railway-track-from-rohri-to-quetta.jpg",
+                "title": "Image5",
+                "author": "author5",
+                "links": "/quetta"
+            }
+        ],
+
+        "restaurants": [{
+                "restaurant_id": "r1",
+                "restaurant_name": "Restaurant 1",
+                "restaurant_image": "http://c.amsterdam/wp-content/uploads/2015/09/restaurant-c-michiel-van-der-eerde-amsterdam-2.jpg",
+                "restaurant_address": "123 street",
+                "restaurant_number": 123456789,
+                "restaurant_manager_name": "Saim",
+                "restaurant_owner_name": "ABC",
+                "country": "Pakistan",
+                "city": "Karachi",
+                "restaurnat_status": "Active"
+            },
+            {
+                "restaurant_id": "r2",
+                "restaurant_name": "Restaurant 2",
+                "restaurant_image": "http://www.stanleyhotel.com/uploads/9/8/6/9/98696462/published/20111115-cascades001v2_3.jpeg?1492712982",
+                "restaurant_address": "123 street",
+                "restaurant_number": 123456789,
+                "restaurant_manager_name": "Saim",
+                "restaurant_owner_name": "ABC",
+                "country": "Pakistan",
+                "city": "Karachi",
+                "restaurnat_status": "Active"
+            },
+            {
+                "restaurant_id": "r3",
+                "restaurant_name": "Restaurant 3",
+                "restaurant_image": "http://mediad.publicbroadcasting.net/p/michigan/files/201506/restaurant_wikimedia.jpg",
+                "restaurant_address": "123 street",
+                "restaurant_number": 123456789,
+                "restaurant_manager_name": "Saim",
+                "restaurant_owner_name": "ABC",
+                "country": "Pakistan",
+                "city": "Karachi",
+                "restaurnat_status": "Active"
+            },
+            {
+                "restaurant_id": "r4",
+                "restaurant_name": "Restaurant 4",
+                "restaurant_image": "http://belvedereshantigram.com/wp-content/uploads/2016/08/restaurants1.jpg",
+                "restaurant_address": "123 street",
+                "restaurant_number": 123456789,
+                "restaurant_manager_name": "Saim",
+                "restaurant_owner_name": "ABC",
+                "country": "Pakistan",
+                "city": "Karachi",
+                "restaurnat_status": "Active"
+            },
+            {
+                "restaurant_id": "r5",
+                "restaurant_name": "Restaurant 5",
+                "restaurant_image": "https://www.gordonramsayrestaurants.com/assets/Uploads/_resampled/CroppedFocusedImage121578650-50-USC-Christmas-Gordon-Ramsay.gif",
+                "restaurant_address": "123 street",
+                "restaurant_number": 123456789,
+                "restaurant_manager_name": "Saim",
+                "restaurant_owner_name": "ABC",
+                "country": "Pakistan",
+                "city": "Karachi",
+                "restaurnat_status": "Active"
+            },
+            {
+                "restaurant_id": "r6",
+                "restaurant_name": "Restaurant 6",
+                "restaurant_image": "https://www.gordonramsayrestaurants.com/assets/Uploads/_resampled/CroppedFocusedImage121578650-50-USC-Christmas-Gordon-Ramsay.gif",
+                "restaurant_address": "123 street",
+                "restaurant_number": 123456789,
+                "restaurant_manager_name": "Saim",
+                "restaurant_owner_name": "ABC",
+                "country": "Pakistan",
+                "city": "Karachi",
+                "restaurnat_status": "Active"
+            }
+        ]
+    }
+}

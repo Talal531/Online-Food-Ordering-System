@@ -1,0 +1,28 @@
+{
+  "name": "fyp",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "material-ui": "^1.0.0-beta.21",
+    "material-ui-icons": "^1.0.0-beta.17",
+    "react": "^16.1.1",
+    "react-bootstrap": "^0.31.5",
+    "react-dom": "^16.1.1",
+    "react-materialize": "^1.1.0",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.0.17",
+    "react-slick": "^0.15.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "babel-plugin-import": "^1.6.2"
+  }
+}
