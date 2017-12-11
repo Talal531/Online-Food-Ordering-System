@@ -2,8 +2,8 @@ import React from 'react';
 import {Carousel, Button, Icon} from 'react-materialize';
 
 const MateriaizeSlider = (props) => {
-	console.log(Carousel);
-	console.log(props);
+	// console.log(Carousel);
+	// console.log(props);
     return (
         <Carousel
 	        fixedItem={<div>

@@ -28,7 +28,7 @@ const cityList = {
     textAlign: 'center'
 }
 const City = (props) => {
-    console.log(props.city)
+    // console.log(props.city)
     return (
         <div className="container">
             <div style={container} className="cityList">

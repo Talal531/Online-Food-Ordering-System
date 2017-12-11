@@ -16,7 +16,7 @@
                 "img": "https://www.samaa.tv/wp-content/uploads/2016/10/mazar-e-quaid-640x480.jpg",
                 "title": "Karachi",
                 "author": "author1",
-                "links": "/karachi"
+                "links": "karachi"
             },
             {
                 "id": "c2",
@@ -24,7 +24,7 @@
                 "img": "http://1.bp.blogspot.com/-EHi_JSUicGc/VLqJiLQKQII/AAAAAAAAFqA/3_EdQWd5l2A/s1600/minor-e-pakistan-latest-pictures4.jpg",
                 "title": "Lahore",
                 "author": "author2",
-                "links": "/lahore"
+                "links": "lahore"
             },
             {
                 "id": "c3",
@@ -32,7 +32,7 @@
                 "img": "http://minhajimages.kortechx.netdna-cdn.com/images-sliders/Minhaj-ul-Quran_Islamabad_01.jpg",
                 "title": "Islamabad",
                 "author": "author3",
-                "links": "/isalmabad"
+                "links": "isalmabad"
             },
             {
                 "id": "c4",
@@ -40,7 +40,7 @@
                 "img": "https://www.youlinmagazine.com/articles/multan-the-city-of-saints.jpg",
                 "title": "Multan",
                 "author": "author4",
-                "links": "/multan"
+                "links": "multan"
             },
             {
                 "id": "c5",
@@ -48,7 +48,7 @@
                 "img": "http://4.bp.blogspot.com/-dozogn9cUvI/UBFSMAogpXI/AAAAAAAAAeo/9NDWOtr2q8U/s1600/7-railway-track-from-rohri-to-quetta.jpg",
                 "title": "Quetta",
                 "author": "author5",
-                "links": "/quetta"
+                "links": "quetta"
             },
             {
                 "id": "c6",
@@ -56,7 +56,7 @@
                 "img": "http://4.bp.blogspot.com/-dozogn9cUvI/UBFSMAogpXI/AAAAAAAAAeo/9NDWOtr2q8U/s1600/7-railway-track-from-rohri-to-quetta.jpg",
                 "title": "Image5",
                 "author": "author5",
-                "links": "/quetta"
+                "links": "quetta"
             },
             {
                 "id": "c7",
@@ -64,82 +64,384 @@
                 "img": "http://4.bp.blogspot.com/-dozogn9cUvI/UBFSMAogpXI/AAAAAAAAAeo/9NDWOtr2q8U/s1600/7-railway-track-from-rohri-to-quetta.jpg",
                 "title": "Image5",
                 "author": "author5",
-                "links": "/quetta"
+                "links": "quetta"
             }
         ],
 
+
+
         "restaurants": [{
-                "restaurant_id": "r1",
-                "restaurant_name": "Restaurant 1",
+                "restaurant_id": "1",
+                "restaurant_name": "restaurant-1",
                 "restaurant_image": "http://c.amsterdam/wp-content/uploads/2015/09/restaurant-c-michiel-van-der-eerde-amsterdam-2.jpg",
                 "restaurant_address": "123 street",
                 "restaurant_number": 123456789,
                 "restaurant_manager_name": "Saim",
                 "restaurant_owner_name": "ABC",
+                "restaurant_category": "dine-in",
                 "country": "Pakistan",
-                "city": "Karachi",
+                "city": "karachi",
+                "city_Id": "c1",
                 "restaurnat_status": "Active"
             },
             {
-                "restaurant_id": "r2",
-                "restaurant_name": "Restaurant 2",
+                "restaurant_id": "2",
+                "restaurant_name": "restaurant-2",
                 "restaurant_image": "http://www.stanleyhotel.com/uploads/9/8/6/9/98696462/published/20111115-cascades001v2_3.jpeg?1492712982",
                 "restaurant_address": "123 street",
                 "restaurant_number": 123456789,
                 "restaurant_manager_name": "Saim",
                 "restaurant_owner_name": "ABC",
+                "restaurant_category": "dine-in",
                 "country": "Pakistan",
                 "city": "Karachi",
+                "city_Id": "c1",
                 "restaurnat_status": "Active"
             },
             {
-                "restaurant_id": "r3",
-                "restaurant_name": "Restaurant 3",
+                "restaurant_id": "3",
+                "restaurant_name": "restaurant-3",
                 "restaurant_image": "http://mediad.publicbroadcasting.net/p/michigan/files/201506/restaurant_wikimedia.jpg",
                 "restaurant_address": "123 street",
                 "restaurant_number": 123456789,
                 "restaurant_manager_name": "Saim",
                 "restaurant_owner_name": "ABC",
+                "restaurant_category": "dine-in",
                 "country": "Pakistan",
-                "city": "Karachi",
+                "city": "Islamabad",
+                "city_Id": "c3",
                 "restaurnat_status": "Active"
             },
             {
-                "restaurant_id": "r4",
-                "restaurant_name": "Restaurant 4",
+                "restaurant_id": "4",
+                "restaurant_name": "restaurant-4",
                 "restaurant_image": "http://belvedereshantigram.com/wp-content/uploads/2016/08/restaurants1.jpg",
                 "restaurant_address": "123 street",
                 "restaurant_number": 123456789,
                 "restaurant_manager_name": "Saim",
                 "restaurant_owner_name": "ABC",
+                "restaurant_category": "delivery",
                 "country": "Pakistan",
                 "city": "Karachi",
+                "city_Id": "c1",
                 "restaurnat_status": "Active"
             },
             {
-                "restaurant_id": "r5",
-                "restaurant_name": "Restaurant 5",
+                "restaurant_id": "5",
+                "restaurant_name": "restaurant-5",
                 "restaurant_image": "https://www.gordonramsayrestaurants.com/assets/Uploads/_resampled/CroppedFocusedImage121578650-50-USC-Christmas-Gordon-Ramsay.gif",
                 "restaurant_address": "123 street",
                 "restaurant_number": 123456789,
                 "restaurant_manager_name": "Saim",
                 "restaurant_owner_name": "ABC",
+                "restaurant_category": "dine-in",
                 "country": "Pakistan",
                 "city": "Karachi",
+                "city_Id": "c1",
                 "restaurnat_status": "Active"
             },
             {
-                "restaurant_id": "r6",
-                "restaurant_name": "Restaurant 6",
+                "restaurant_id": "6",
+                "restaurant_name": "restaurant-6",
                 "restaurant_image": "https://www.gordonramsayrestaurants.com/assets/Uploads/_resampled/CroppedFocusedImage121578650-50-USC-Christmas-Gordon-Ramsay.gif",
                 "restaurant_address": "123 street",
                 "restaurant_number": 123456789,
                 "restaurant_manager_name": "Saim",
                 "restaurant_owner_name": "ABC",
+                "restaurant_category": "delivery",
                 "country": "Pakistan",
-                "city": "Karachi",
-                "restaurnat_status": "Active"
+                "city": "Lahore",
+                "city_Id": "c2",
+                "restaurnat_status": "Active",
+                "cuisines": [{
+                        "cuisineId": "1",
+                        "cuisineName": "Cuisine 1",
+                        "cuisineMenu": ["menu1", "menu2", "menu3"]
+                    },
+                    {
+                        "cuisineId": "2",
+                        "cuisineName": "Cuisine 2",
+                        "cuisineMenu": ["menu1", "menu2", "menu3"]
+                    },
+                    {
+                        "cuisineId": "3",
+                        "cuisineName": "Cuisine 3",
+                        "cuisineMenu": ["menu1", "menu2", "menu3"]
+                    },
+                    {
+                        "cuisineId": "4",
+                        "cuisineName": "Cuisine 4",
+                        "cuisineMenu": ["menu1", "menu2", "menu3"]
+                    }
+                ]
+
+
+
             }
         ]
-    }
+
+    },
+
+    "RestaurantsFilters": {
+        "restaurants": {
+            "name": "Restaurants",
+            "filterByRestaurant": [
+                "popularity",
+                "Rating",
+                "Cost",
+                "Newly Added",
+                "Free Delivery",
+                "Online Payments"
+            ]
+        },
+
+        "cuisines": {
+            "name": "Cuisines",
+            "filterByCuisine": [
+                "Fast Foods",
+                "Beverages",
+                "Pizzas",
+                "Ice Cream",
+                "Bakery",
+                "Juices"
+            ]
+        },
+
+        "category": {
+            "name": "Category",
+            "filterByCategory": [
+                "Dine-In",
+                "Delivery"
+            ]
+        },
+        "Playgoundcategory": {
+            "name": "Category",
+            "filterByCategory": [{
+                    "id": "category-1",
+                    "name": "Dine-In"
+                },
+                {
+                    "id": "categiry2",
+                    "name": "Delivery"
+                }
+            ]
+        }
+    },
+
+    "userDashboard": {
+
+    },
+
+    "restaurants": [{
+            "restaurant_id": "1",
+            "restaurant_name": "restaurant-1",
+            "restaurant_image": "http://c.amsterdam/wp-content/uploads/2015/09/restaurant-c-michiel-van-der-eerde-amsterdam-2.jpg",
+            "restaurant_address": "123 street",
+            "restaurant_number": 123456789,
+            "restaurant_manager_name": "Saim",
+            "restaurant_owner_name": "ABC",
+            "restaurant_category": "dine-in",
+            "country": "Pakistan",
+            "city": "karachi",
+            "city_Id": "c1",
+            "restaurnat_status": "Active",
+            "cuisines": [{
+                    "cuisineId": "1",
+                    "cuisineName": "Cuisine 1",
+                    "cuisineMenu": ["menu1", "menu2", "menu3"]
+                },
+                {
+                    "cuisineId": "2",
+                    "cuisineName": "Cuisine 2",
+                    "cuisineMenu": ["menu1", "menu2", "menu3"]
+                },
+                {
+                    "cuisineId": "3",
+                    "cuisineName": "Cuisine 3",
+                    "cuisineMenu": ["menu1", "menu2", "menu3"]
+                },
+                {
+                    "cuisineId": "4",
+                    "cuisineName": "Cuisine 4",
+                    "cuisineMenu": ["menu1", "menu2", "menu3"]
+                }
+            ]
+        },
+        {
+            "restaurant_id": "2",
+            "restaurant_name": "restaurant-2",
+            "restaurant_image": "http://www.stanleyhotel.com/uploads/9/8/6/9/98696462/published/20111115-cascades001v2_3.jpeg?1492712982",
+            "restaurant_address": "123 street",
+            "restaurant_number": 123456789,
+            "restaurant_manager_name": "Saim",
+            "restaurant_owner_name": "ABC",
+            "restaurant_category": "dine-in",
+            "country": "Pakistan",
+            "city": "Karachi",
+            "city_Id": "c1",
+            "restaurnat_status": "Active",
+            "cuisines": [{
+                    "cuisineId": "1",
+                    "cuisineName": "Cuisine 1",
+                    "cuisineMenu": ["menu1", "menu2", "menu3"]
+                },
+                {
+                    "cuisineId": "2",
+                    "cuisineName": "Cuisine 2",
+                    "cuisineMenu": ["menu1", "menu2", "menu3"]
+                },
+                {
+                    "cuisineId": "3",
+                    "cuisineName": "Cuisine 3",
+                    "cuisineMenu": ["menu1", "menu2", "menu3"]
+                },
+                {
+                    "cuisineId": "4",
+                    "cuisineName": "Cuisine 4",
+                    "cuisineMenu": ["menu1", "menu2", "menu3"]
+                }
+            ]
+        },
+        {
+            "restaurant_id": "3",
+            "restaurant_name": "restaurant-3",
+            "restaurant_image": "http://mediad.publicbroadcasting.net/p/michigan/files/201506/restaurant_wikimedia.jpg",
+            "restaurant_address": "123 street",
+            "restaurant_number": 123456789,
+            "restaurant_manager_name": "Saim",
+            "restaurant_owner_name": "ABC",
+            "restaurant_category": "dine-in",
+            "country": "Pakistan",
+            "city": "Islamabad",
+            "city_Id": "c3",
+            "restaurnat_status": "Active",
+            "cuisines": [{
+                    "cuisineId": "1",
+                    "cuisineName": "Cuisine 1",
+                    "cuisineMenu": ["menu1", "menu2", "menu3"]
+                },
+                {
+                    "cuisineId": "2",
+                    "cuisineName": "Cuisine 2",
+                    "cuisineMenu": ["menu1", "menu2", "menu3"]
+                },
+                {
+                    "cuisineId": "3",
+                    "cuisineName": "Cuisine 3",
+                    "cuisineMenu": ["menu1", "menu2", "menu3"]
+                },
+                {
+                    "cuisineId": "4",
+                    "cuisineName": "Cuisine 4",
+                    "cuisineMenu": ["menu1", "menu2", "menu3"]
+                }
+            ]
+        },
+        {
+            "restaurant_id": "4",
+            "restaurant_name": "restaurant-4",
+            "restaurant_image": "http://belvedereshantigram.com/wp-content/uploads/2016/08/restaurants1.jpg",
+            "restaurant_address": "123 street",
+            "restaurant_number": 123456789,
+            "restaurant_manager_name": "Saim",
+            "restaurant_owner_name": "ABC",
+            "restaurant_category": "delivery",
+            "country": "Pakistan",
+            "city": "Karachi",
+            "city_Id": "c1",
+            "restaurnat_status": "Active",
+            "cuisines": [{
+                    "cuisineId": "1",
+                    "cuisineName": "Cuisine 1",
+                    "cuisineMenu": ["menu1", "menu2", "menu3"]
+                },
+                {
+                    "cuisineId": "2",
+                    "cuisineName": "Cuisine 2",
+                    "cuisineMenu": ["menu1", "menu2", "menu3"]
+                },
+                {
+                    "cuisineId": "3",
+                    "cuisineName": "Cuisine 3",
+                    "cuisineMenu": ["menu1", "menu2", "menu3"]
+                },
+                {
+                    "cuisineId": "4",
+                    "cuisineName": "Cuisine 4",
+                    "cuisineMenu": ["menu1", "menu2", "menu3"]
+                }
+            ]
+        },
+        {
+            "restaurant_id": "5",
+            "restaurant_name": "restaurant-5",
+            "restaurant_image": "https://www.gordonramsayrestaurants.com/assets/Uploads/_resampled/CroppedFocusedImage121578650-50-USC-Christmas-Gordon-Ramsay.gif",
+            "restaurant_address": "123 street",
+            "restaurant_number": 123456789,
+            "restaurant_manager_name": "Saim",
+            "restaurant_owner_name": "ABC",
+            "restaurant_category": "dine-in",
+            "country": "Pakistan",
+            "city": "Karachi",
+            "city_Id": "c1",
+            "restaurnat_status": "Active",
+            "cuisines": [{
+                    "cuisineId": "1",
+                    "cuisineName": "Cuisine 1",
+                    "cuisineMenu": ["menu1", "menu2", "menu3"]
+                },
+                {
+                    "cuisineId": "2",
+                    "cuisineName": "Cuisine 2",
+                    "cuisineMenu": ["menu1", "menu2", "menu3"]
+                },
+                {
+                    "cuisineId": "3",
+                    "cuisineName": "Cuisine 3",
+                    "cuisineMenu": ["menu1", "menu2", "menu3"]
+                },
+                {
+                    "cuisineId": "4",
+                    "cuisineName": "Cuisine 4",
+                    "cuisineMenu": ["menu1", "menu2", "menu3"]
+                }
+            ]
+        },
+        {
+            "restaurant_id": "6",
+            "restaurant_name": "restaurant-6",
+            "restaurant_image": "https://www.gordonramsayrestaurants.com/assets/Uploads/_resampled/CroppedFocusedImage121578650-50-USC-Christmas-Gordon-Ramsay.gif",
+            "restaurant_address": "123 street",
+            "restaurant_number": 123456789,
+            "restaurant_manager_name": "Saim",
+            "restaurant_owner_name": "ABC",
+            "restaurant_category": "delivery",
+            "country": "Pakistan",
+            "city": "Lahore",
+            "city_Id": "c2",
+            "restaurnat_status": "Active",
+            "cuisines": [{
+                    "cuisineId": "1",
+                    "cuisineName": "Cuisine 1",
+                    "cuisineMenu": ["menu1", "menu2", "menu3"]
+                },
+                {
+                    "cuisineId": "2",
+                    "cuisineName": "Cuisine 2",
+                    "cuisineMenu": ["menu1", "menu2", "menu3"]
+                },
+                {
+                    "cuisineId": "3",
+                    "cuisineName": "Cuisine 3",
+                    "cuisineMenu": ["menu1", "menu2", "menu3"]
+                },
+                {
+                    "cuisineId": "4",
+                    "cuisineName": "Cuisine 4",
+                    "cuisineMenu": ["menu1", "menu2", "menu3"]
+                }
+            ]
+
+        }
+    ]
 }

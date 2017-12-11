@@ -1,12 +1,16 @@
 import React, {Component} from 'react';
 // ===================================================================
 // REACT-ROUTER
-import {BrowserRouter, Route} from 'react-router-dom';
-// =================================================================== CUSTOM
-// COMPONENTS
+import {BrowserRouter, Route, Redirect} from 'react-router-dom';
+// =================================================================== 
+//CUSTOM  COMPONENTS
 import Header from './components/header';
 import Home from './components/home';
 import Restaurants from './components/restaurants';
+import Login from './components/loginButton';
+import UserDashboard from './components/userDashboard';
+import RestaurantsMenu from './components/restaurantsMenu';
+
 // =====================================================================
 // MATERIAL-UI COMPONENTS
 // ======================================================================
@@ -19,8 +23,13 @@ class App extends Component {
       <BrowserRouter>
         <div>
           <Header/>
-          <Route exact path="/" component={Home} />
-          <Route path="/restaurants" component={Restaurants}/>
+          <Route exact={true} path="/" component={Home} />
+          <Route exact ={true} path="/:resCity/restaurants" component={Restaurants}/>
+         
+          <Route path="/login" component={Login} />
+          <Route path="/dashboard" component={UserDashboard} />
+
+          <Route path="/:resCity/restaurants/:resName" component={RestaurantsMenu}/>
         </div>
       </BrowserRouter>
     );

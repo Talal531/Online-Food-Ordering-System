@@ -4,7 +4,6 @@ import {Link} from 'react-router-dom';
 
 import {Image} from 'react-bootstrap';
 
-const City_URL = "http://localhost:3001/home";
 
 //============================================================
 const style = {
@@ -31,19 +30,6 @@ class City extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      city: [],
-      keywords: ''
-    }
-
-  }
-
-  componentDidMount() {
-    fetch(City_URL, {method: 'GET'})
-      .then(response => response.json())
-      .then(json => {
-        this.setState({city: json.city})
-      })
   }
 
   renderCityLsit = (cityList) => {
@@ -51,7 +37,7 @@ class City extends Component {
       return (
         <Link
           key={item.id}
-          to={`/restaurants${item.links}`}
+          to={`${item.links}/restaurants`}
           style={{
           width: '250px',
           height: '200px',
@@ -70,7 +56,6 @@ class City extends Component {
     })
   }
   render() {
-    console.log(this.props)
     return (
       <div style={{
         minHeight: '600px'
@@ -87,7 +72,7 @@ class City extends Component {
           flexWrap: 'wrap',
           justifyContent: 'space-around'
         }}>
-          {this.renderCityLsit(this.state.city)}
+          {this.renderCityLsit(this.props.allCity)}
         </div>
       </div>
     );
