@@ -29,7 +29,7 @@ class App extends Component {
           <Route path="/login" component={Login} />
           <Route path="/dashboard" component={UserDashboard} />
 
-          <Route path="/:resCity/restaurants/:resName" component={RestaurantsMenu}/>
+          <Route path="/:resCity/restaurants/:resName" component={RestaurantsMenu} />
         </div>
       </BrowserRouter>
     );

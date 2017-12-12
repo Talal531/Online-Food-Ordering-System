@@ -7,7 +7,6 @@ import Typography from 'material-ui/Typography';
 
 import Filters from './filters';
 
-
 const DB_URL = "http://localhost:3001/home";
 
 const styles = {
@@ -28,24 +27,24 @@ class Restaurants extends Component {
         }
     }
     componentDidMount() {
-        // console.log(this.props.match.params.resCity) console.log(capt)
         fetch(DB_URL, {method: 'GET'})
             .then(response => response.json())
             .then(json => {
                 const restaurants = json.restaurants
-                // console.log(restaurants)
                 this.setState({restaurants})
 
             })
 
     }
     renderList = (restaurantList) => {
-        return restaurantList.map((item, i) => {
+        // {console.log(restaurantList.filter(restau =>restau.city==this.props.match.params.resCity))}
+        //filter restaurants accoriding to CITY ==========================================================
+        const filterList = restaurantList.filter(restau =>restau.city==this.props.match.params.resCity) ;
+        return filterList.map((item, index) => {
             return (
-              
                 <div>
                     <Card style={styles.card}>
-                        <Link to={`${this.props.match.url}/${item.restaurant_name}`}>
+                        <Link key={index} to={`${this.props.match.url}/${item.restaurant_name}`}>
 
                             <CardMedia
                                 style={styles.media}
@@ -54,7 +53,12 @@ class Restaurants extends Component {
 
                         </Link>
                         <CardContent>
-                            <Typography style={{textTransform: 'capitalize'}} type="headline" component="h2">
+                            <Typography
+                                style={{
+                                textTransform: 'capitalize'
+                            }}
+                                type="headline"
+                                component="h2">
                                 {`${item.restaurant_name}`}
                             </Typography>
                             <Typography component="p">
@@ -100,7 +104,6 @@ class Restaurants extends Component {
                         xsHidden
                         smHidden
                         md={3}>
-                        {/* <Filters cityName={this.props.match.params.resCity}/> */}
                         <Filters cityName={this.props}/>
                     </Col>
 

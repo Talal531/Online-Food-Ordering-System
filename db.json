@@ -32,7 +32,7 @@
                 "img": "http://minhajimages.kortechx.netdna-cdn.com/images-sliders/Minhaj-ul-Quran_Islamabad_01.jpg",
                 "title": "Islamabad",
                 "author": "author3",
-                "links": "isalmabad"
+                "links": "islamabad"
             },
             {
                 "id": "c4",
@@ -84,6 +84,7 @@
                 "city_Id": "c1",
                 "restaurnat_status": "Active"
             },
+
             {
                 "restaurant_id": "2",
                 "restaurant_name": "restaurant-2",
@@ -94,10 +95,11 @@
                 "restaurant_owner_name": "ABC",
                 "restaurant_category": "dine-in",
                 "country": "Pakistan",
-                "city": "Karachi",
+                "city": "karachi",
                 "city_Id": "c1",
                 "restaurnat_status": "Active"
             },
+
             {
                 "restaurant_id": "3",
                 "restaurant_name": "restaurant-3",
@@ -108,10 +110,11 @@
                 "restaurant_owner_name": "ABC",
                 "restaurant_category": "dine-in",
                 "country": "Pakistan",
-                "city": "Islamabad",
+                "city": "islamabad",
                 "city_Id": "c3",
                 "restaurnat_status": "Active"
             },
+
             {
                 "restaurant_id": "4",
                 "restaurant_name": "restaurant-4",
@@ -122,10 +125,11 @@
                 "restaurant_owner_name": "ABC",
                 "restaurant_category": "delivery",
                 "country": "Pakistan",
-                "city": "Karachi",
+                "city": "karachi",
                 "city_Id": "c1",
                 "restaurnat_status": "Active"
             },
+
             {
                 "restaurant_id": "5",
                 "restaurant_name": "restaurant-5",
@@ -136,10 +140,11 @@
                 "restaurant_owner_name": "ABC",
                 "restaurant_category": "dine-in",
                 "country": "Pakistan",
-                "city": "Karachi",
+                "city": "karachi",
                 "city_Id": "c1",
                 "restaurnat_status": "Active"
             },
+
             {
                 "restaurant_id": "6",
                 "restaurant_name": "restaurant-6",
@@ -150,7 +155,7 @@
                 "restaurant_owner_name": "ABC",
                 "restaurant_category": "delivery",
                 "country": "Pakistan",
-                "city": "Lahore",
+                "city": "lahore",
                 "city_Id": "c2",
                 "restaurnat_status": "Active",
                 "cuisines": [{
@@ -174,8 +179,78 @@
                         "cuisineMenu": ["menu1", "menu2", "menu3"]
                     }
                 ]
+            },
 
+            {
+                "restaurant_id": "7",
+                "restaurant_name": "restaurant-7",
+                "restaurant_image": "https://www.gordonramsayrestaurants.com/assets/Uploads/_resampled/CroppedFocusedImage121578650-50-USC-Christmas-Gordon-Ramsay.gif",
+                "restaurant_address": "123 street",
+                "restaurant_number": 123456789,
+                "restaurant_manager_name": "Saim",
+                "restaurant_owner_name": "ABC",
+                "restaurant_category": "delivery",
+                "country": "Pakistan",
+                "city": "quetta",
+                "city_Id": "c2",
+                "restaurnat_status": "Active",
+                "cuisines": [{
+                        "cuisineId": "1",
+                        "cuisineName": "Cuisine 1",
+                        "cuisineMenu": ["menu1", "menu2", "menu3"]
+                    },
+                    {
+                        "cuisineId": "2",
+                        "cuisineName": "Cuisine 2",
+                        "cuisineMenu": ["menu1", "menu2", "menu3"]
+                    },
+                    {
+                        "cuisineId": "3",
+                        "cuisineName": "Cuisine 3",
+                        "cuisineMenu": ["menu1", "menu2", "menu3"]
+                    },
+                    {
+                        "cuisineId": "4",
+                        "cuisineName": "Cuisine 4",
+                        "cuisineMenu": ["menu1", "menu2", "menu3"]
+                    }
+                ]
+            },
 
+            {
+                "restaurant_id": "8",
+                "restaurant_name": "restaurant-8",
+                "restaurant_image": "https://www.gordonramsayrestaurants.com/assets/Uploads/_resampled/CroppedFocusedImage121578650-50-USC-Christmas-Gordon-Ramsay.gif",
+                "restaurant_address": "123 street",
+                "restaurant_number": 123456789,
+                "restaurant_manager_name": "Saim",
+                "restaurant_owner_name": "ABC",
+                "restaurant_category": "delivery",
+                "country": "Pakistan",
+                "city": "multan",
+                "city_Id": "c2",
+                "restaurnat_status": "Active",
+                "cuisines": [{
+                        "cuisineId": "1",
+                        "cuisineName": "Cuisine 1",
+                        "cuisineMenu": ["menu1", "menu2", "menu3"]
+                    },
+                    {
+                        "cuisineId": "2",
+                        "cuisineName": "Cuisine 2",
+                        "cuisineMenu": ["menu1", "menu2", "menu3"]
+                    },
+                    {
+                        "cuisineId": "3",
+                        "cuisineName": "Cuisine 3",
+                        "cuisineMenu": ["menu1", "menu2", "menu3"]
+                    },
+                    {
+                        "cuisineId": "4",
+                        "cuisineName": "Cuisine 4",
+                        "cuisineMenu": ["menu1", "menu2", "menu3"]
+                    }
+                ]
 
             }
         ]

@@ -19,7 +19,6 @@ class FiltersBy extends Component {
     }
 
     render() {
-// console.log(this.props.match)
         return (
             <div>
                 <h6 style={Styles.h6}>{this.props.name}</h6>
@@ -76,7 +75,6 @@ class Filters extends Component {
             })
     }
     render() {
-console.log(this.props)
         return (
             <div>
                 <h5>Filters</h5><hr/>
