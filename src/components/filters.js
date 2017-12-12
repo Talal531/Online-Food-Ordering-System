@@ -14,9 +14,6 @@ const Styles = {
 }
 
 class FiltersBy extends Component {
-    constructor(props) {
-        super(props);
-    }
 
     render() {
         return (

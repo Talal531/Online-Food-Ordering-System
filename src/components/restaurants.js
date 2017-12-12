@@ -37,6 +37,7 @@ class Restaurants extends Component {
 
     }
     renderList = (restaurantList) => {
+        console.log(this.props)
         // {console.log(restaurantList.filter(restau =>restau.city==this.props.match.params.resCity))}
         //filter restaurants accoriding to CITY ==========================================================
         const filterList = restaurantList.filter(restau =>restau.city==this.props.match.params.resCity) ;
