@@ -24,9 +24,8 @@ class FiltersBy extends Component {
                     .restaurants
                     .map((item, index) => {
                         return (
-                            <div>
+                            <div key={index}>
                                 <Link
-                                    key={index}
                                     to={{
                                     pathname: `${this.props.cityName.match.url}`,
                                     // pathname: `/${this.props.cityName}/restaurants`,

@@ -100,10 +100,11 @@ import React, {Component} from 'react';
 import AppBar from 'material-ui/AppBar';
 import Tabs, {Tab} from 'material-ui/Tabs';
 import Typography from 'material-ui/Typography';
+import Grid from 'material-ui/Grid';
 
 import {Link} from 'react-router-dom';
 
-const DB_URL = "http://localhost:3001/home";
+
 
 //TAB container component
 function TabContainer(props) {
@@ -140,19 +141,10 @@ class RestaurantInfoTab extends Component {
         this.setState({value});
     };
 
-     componentDidMount() {
-        fetch(DB_URL, {method: 'GET'})
-            .then(response => response.json())
-            .then(json => {
-                const restaurants = json.restaurants[0]
-                console.log(restaurants)
-                this.setState({restaurants})
-
-            })
-
-    };
 
     render() {
+       
+        console.log(this.props.abc)
         return (
             <div style={styles.root}>
                 <AppBar position="static" color="default">
@@ -164,11 +156,52 @@ class RestaurantInfoTab extends Component {
                         indicatorColor="primary"
                         textColor="primary">
                         <Tab label="Info"/>
-                        <Tab label="Reviews"/>
+                        <Tab label="Reviews"/>                        
                     </Tabs>
                 </AppBar>
-                    {this.state.value === 0 && <TabContainer>
-                        <h1>INFO</h1>
+
+
+                    {this.state.value === 0 && 
+                    <TabContainer>
+                        {this.props.abc.map((item,i)=> {
+                            return(
+                                <div>
+                                    <Grid container spacing={10}>
+                                         <Grid item xs={12} sm={12} md={6} lg={6} xl={3}>
+                                            <Typography type="headline" component="h2">
+                                                <span style={{color: 'green', fontFamily: 'serif'}} >Contact Number: </span> <br /> {item.restaurant_number}
+                                            </Typography>
+
+                                            <Typography type="headline" component="h2"><br />
+                                                <span>Opening & Hours: </span>
+                                                {/* {console.log(item.restaurant_opening_days)} */}
+                                                {item.restaurant_opening_days.map((item,i)=> {
+                                                    return (
+                                                        <Grid container spacing={10}>
+                                                            <Grid item type="headline" component="h2" xs={12} md={6} lg={6} xl={6}>
+                                                                <Typography>{item.day}: </Typography>
+                                                            </Grid>
+                                                            <Grid item type="text" xs={12} md={6} lg={6} xl={6}>
+                                                                <Typography>{item.timing}: </Typography>
+                                                            </Grid>
+                                                            
+                                                        </Grid>
+                                                    )
+                                                })}
+                                            </Typography>
+                                         </Grid>
+
+                                         <Grid item xs={12} sm={12} md={6} lg={6} xl={3}>
+                                            <b>Address: </b> <span style={{textTransform:"capitalize"}}> {`${item.restaurant_address} ${item.city}, ${item.country}`} </span>
+                                            <span>
+                                                <iframe src="https://www.google.com" frameborder="0"></iframe>
+                                            </span>
+                                         </Grid>
+
+                                    </Grid>
+                                </div>
+                            )
+                        })}
                     </TabContainer>}
               
                     {this.state.value === 1 && <TabContainer>

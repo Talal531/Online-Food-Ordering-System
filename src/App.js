@@ -25,11 +25,11 @@ class App extends Component {
           <Header/>
           <Route exact={true} path="/" component={Home} />
           <Route exact ={true} path="/:resCity/restaurants" component={Restaurants}/>
+          <Route path="/:resCity/restaurants/:resName" component={RestaurantsMenu} />
          
           <Route path="/login" component={Login} />
           <Route path="/dashboard" component={UserDashboard} />
 
-          <Route path="/:resCity/restaurants/:resName" component={RestaurantsMenu} />
         </div>
       </BrowserRouter>
     );

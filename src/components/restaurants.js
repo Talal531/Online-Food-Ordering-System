@@ -1,15 +1,21 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
+
 import {Row, Col, Grid, Thumbnail} from 'react-bootstrap';
+import PropTypes from 'prop-types';
+import {withStyles} from 'material-ui/styles';
+import Paper from 'material-ui/Paper';
+// import Grid from 'material-ui/Grid';
 import Card, {CardActions, CardContent, CardMedia} from 'material-ui/Card';
 import Button from 'material-ui/Button';
 import Typography from 'material-ui/Typography';
+
 
 import Filters from './filters';
 
 const DB_URL = "http://localhost:3001/home";
 
-const styles = {
+const _styles = {
     card: {
         width: '100%'
     },
@@ -17,6 +23,12 @@ const styles = {
         height: 150
     }
 }
+
+const styles = theme => ({
+    root: {
+        flexGrow:1
+    },
+})
 
 class Restaurants extends Component {
     constructor(props) {
@@ -37,18 +49,18 @@ class Restaurants extends Component {
 
     }
     renderList = (restaurantList) => {
-        console.log(this.props)
+        // console.log(this.props)
         // {console.log(restaurantList.filter(restau =>restau.city==this.props.match.params.resCity))}
         //filter restaurants accoriding to CITY ==========================================================
-        const filterList = restaurantList.filter(restau =>restau.city==this.props.match.params.resCity) ;
+        const filterList = restaurantList.filter(restau =>restau.city===this.props.match.params.resCity) ;
         return filterList.map((item, index) => {
             return (
-                <div>
-                    <Card style={styles.card}>
-                        <Link key={index} to={`${this.props.match.url}/${item.restaurant_name}`}>
+                <div key={index}>
+                    <Card style={_styles.card}>
+                        <Link  to={`${this.props.match.url}/${item.restaurant_name}`}>
 
                             <CardMedia
-                                style={styles.media}
+                                style={_styles.media}
                                 image={item.restaurant_image}
                                 title={item.restaurant_name}/>
 
@@ -69,9 +81,11 @@ class Restaurants extends Component {
                         </CardContent>
 
                         <CardActions>
+                        <Link to={`${this.props.match.url}/${item.restaurant_name}/orders`}>
                             <Button dense color="primary">
                                 Order Online
                             </Button>
+                            </Link>
                         </CardActions>
 
                     </Card><br/>
@@ -82,18 +96,28 @@ class Restaurants extends Component {
         })
     }
     render() {
+        const { classes } = this.props;
         return (
             <div
                 style={{
                 width: '95%',
                 margin: '10px auto'
             }}>
-                <h3>Best Restaurants in &nbsp;
+                <h3>Best Restaurants in&nbsp;
                     <span
                         style={{
                         textTransform: 'capitalize'
                     }}>{this.props.match.params.resCity}</span>
                 </h3>
+
+                {/* <Grid container className={classes.root}>
+                    <Grid item sm hidden={{ xlUp : true}}>
+                        <Paper className={classes.paper}>
+                            xs=12
+                        </Paper>
+                    </Grid>
+                </Grid> */}
+                
 
                 <Row className="show-grid">
                     {/* 1st Column */}
@@ -131,4 +155,11 @@ class Restaurants extends Component {
         );
     }
 }
-export default Restaurants;
+
+Restaurants.propTypes = {
+    classes: PropTypes.object.isRequired
+};
+
+export default withStyles(styles)(Restaurants);
+
+// export default Restaurants;

@@ -13,7 +13,7 @@
         "city": [{
                 "id": "c1",
                 "type": "lg",
-                "img": "https://www.samaa.tv/wp-content/uploads/2016/10/mazar-e-quaid-640x480.jpg",
+                "imageURL": "https://www.samaa.tv/wp-content/uploads/2016/10/mazar-e-quaid-640x480.jpg",
                 "title": "Karachi",
                 "author": "author1",
                 "links": "karachi"
@@ -21,7 +21,7 @@
             {
                 "id": "c2",
                 "type": "lg",
-                "img": "http://1.bp.blogspot.com/-EHi_JSUicGc/VLqJiLQKQII/AAAAAAAAFqA/3_EdQWd5l2A/s1600/minor-e-pakistan-latest-pictures4.jpg",
+                "imageURL": "http://1.bp.blogspot.com/-EHi_JSUicGc/VLqJiLQKQII/AAAAAAAAFqA/3_EdQWd5l2A/s1600/minor-e-pakistan-latest-pictures4.jpg",
                 "title": "Lahore",
                 "author": "author2",
                 "links": "lahore"
@@ -29,7 +29,7 @@
             {
                 "id": "c3",
                 "type": "lg",
-                "img": "http://minhajimages.kortechx.netdna-cdn.com/images-sliders/Minhaj-ul-Quran_Islamabad_01.jpg",
+                "imageURL": "http://minhajimages.kortechx.netdna-cdn.com/images-sliders/Minhaj-ul-Quran_Islamabad_01.jpg",
                 "title": "Islamabad",
                 "author": "author3",
                 "links": "islamabad"
@@ -37,7 +37,7 @@
             {
                 "id": "c4",
                 "type": "lg",
-                "img": "https://www.youlinmagazine.com/articles/multan-the-city-of-saints.jpg",
+                "imageURL": "https://www.youlinmagazine.com/articles/multan-the-city-of-saints.jpg",
                 "title": "Multan",
                 "author": "author4",
                 "links": "multan"
@@ -45,7 +45,7 @@
             {
                 "id": "c5",
                 "type": "lg",
-                "img": "http://4.bp.blogspot.com/-dozogn9cUvI/UBFSMAogpXI/AAAAAAAAAeo/9NDWOtr2q8U/s1600/7-railway-track-from-rohri-to-quetta.jpg",
+                "imageURL": "http://4.bp.blogspot.com/-dozogn9cUvI/UBFSMAogpXI/AAAAAAAAAeo/9NDWOtr2q8U/s1600/7-railway-track-from-rohri-to-quetta.jpg",
                 "title": "Quetta",
                 "author": "author5",
                 "links": "quetta"
@@ -53,7 +53,7 @@
             {
                 "id": "c6",
                 "type": "lg",
-                "img": "http://4.bp.blogspot.com/-dozogn9cUvI/UBFSMAogpXI/AAAAAAAAAeo/9NDWOtr2q8U/s1600/7-railway-track-from-rohri-to-quetta.jpg",
+                "imageURL": "http://4.bp.blogspot.com/-dozogn9cUvI/UBFSMAogpXI/AAAAAAAAAeo/9NDWOtr2q8U/s1600/7-railway-track-from-rohri-to-quetta.jpg",
                 "title": "Image5",
                 "author": "author5",
                 "links": "quetta"
@@ -61,7 +61,7 @@
             {
                 "id": "c7",
                 "type": "lg",
-                "img": "http://4.bp.blogspot.com/-dozogn9cUvI/UBFSMAogpXI/AAAAAAAAAeo/9NDWOtr2q8U/s1600/7-railway-track-from-rohri-to-quetta.jpg",
+                "imageURL": "http://4.bp.blogspot.com/-dozogn9cUvI/UBFSMAogpXI/AAAAAAAAAeo/9NDWOtr2q8U/s1600/7-railway-track-from-rohri-to-quetta.jpg",
                 "title": "Image5",
                 "author": "author5",
                 "links": "quetta"
@@ -76,13 +76,67 @@
                 "restaurant_image": "http://c.amsterdam/wp-content/uploads/2015/09/restaurant-c-michiel-van-der-eerde-amsterdam-2.jpg",
                 "restaurant_address": "123 street",
                 "restaurant_number": 123456789,
+                "restaurant_location": {
+                    "longitude": "",
+                    "latitude": ""
+                },
                 "restaurant_manager_name": "Saim",
                 "restaurant_owner_name": "ABC",
                 "restaurant_category": "dine-in",
                 "country": "Pakistan",
                 "city": "karachi",
                 "city_Id": "c1",
-                "restaurnat_status": "Active"
+                "restaurnat_status": "Active",
+                "restaurant_opening_days": [{
+                        "day": "Monday",
+                        "timing": "11 AM to 8 PM"
+                    },
+                    {
+                        "day": "Tuesay",
+                        "timing": "11 AM to 8 PM"
+                    },
+                    {
+                        "day": "Wednesday",
+                        "timing": "11 AM to 8 PM"
+                    },
+                    {
+                        "day": "Thursday",
+                        "timing": "11 AM to 8 PM"
+                    },
+                    {
+                        "day": "Friday",
+                        "timing": "11 AM to 8 PM"
+                    },
+                    {
+                        "day": "Saturday",
+                        "timing": "11 AM to 8 PM"
+                    },
+                    {
+                        "day": "Sunday",
+                        "timing": "11 AM to 8 PM"
+                    }
+                ],
+                "cuisines": [{
+                        "cuisineId": "1",
+                        "cuisineName": "Cuisine 1",
+                        "cuisineMenu": ["menu1", "menu2", "menu3"]
+                    },
+                    {
+                        "cuisineId": "2",
+                        "cuisineName": "Cuisine 2",
+                        "cuisineMenu": ["menu1", "menu2", "menu3"]
+                    },
+                    {
+                        "cuisineId": "3",
+                        "cuisineName": "Cuisine 3",
+                        "cuisineMenu": ["menu1", "menu2", "menu3"]
+                    },
+                    {
+                        "cuisineId": "4",
+                        "cuisineName": "Cuisine 4",
+                        "cuisineMenu": ["menu1", "menu2", "menu3"]
+                    }
+                ]
             },
 
             {
@@ -90,6 +144,10 @@
                 "restaurant_name": "restaurant-2",
                 "restaurant_image": "http://www.stanleyhotel.com/uploads/9/8/6/9/98696462/published/20111115-cascades001v2_3.jpeg?1492712982",
                 "restaurant_address": "123 street",
+                "restaurant_location": {
+                    "longitude": "",
+                    "latitude": ""
+                },
                 "restaurant_number": 123456789,
                 "restaurant_manager_name": "Saim",
                 "restaurant_owner_name": "ABC",
@@ -97,7 +155,57 @@
                 "country": "Pakistan",
                 "city": "karachi",
                 "city_Id": "c1",
-                "restaurnat_status": "Active"
+                "restaurnat_status": "Active",
+                "restaurant_opening_days": [{
+                        "day": "Monday",
+                        "timing": "11 AM to 8 PM"
+                    },
+                    {
+                        "day": "Tuesay",
+                        "timing": "11 AM to 8 PM"
+                    },
+                    {
+                        "day": "Wednesday",
+                        "timing": "11 AM to 8 PM"
+                    },
+                    {
+                        "day": "Thursday",
+                        "timing": "11 AM to 8 PM"
+                    },
+                    {
+                        "day": "Friday",
+                        "timing": "11 AM to 8 PM"
+                    },
+                    {
+                        "day": "Saturday",
+                        "timing": "11 AM to 8 PM"
+                    },
+                    {
+                        "day": "Sunday",
+                        "timing": "11 AM to 8 PM"
+                    }
+                ],
+                "cuisines": [{
+                        "cuisineId": "1",
+                        "cuisineName": "Cuisine 1",
+                        "cuisineMenu": ["menu1", "menu2", "menu3"]
+                    },
+                    {
+                        "cuisineId": "2",
+                        "cuisineName": "Cuisine 2",
+                        "cuisineMenu": ["menu1", "menu2", "menu3"]
+                    },
+                    {
+                        "cuisineId": "3",
+                        "cuisineName": "Cuisine 3",
+                        "cuisineMenu": ["menu1", "menu2", "menu3"]
+                    },
+                    {
+                        "cuisineId": "4",
+                        "cuisineName": "Cuisine 4",
+                        "cuisineMenu": ["menu1", "menu2", "menu3"]
+                    }
+                ]
             },
 
             {
@@ -105,6 +213,10 @@
                 "restaurant_name": "restaurant-3",
                 "restaurant_image": "http://mediad.publicbroadcasting.net/p/michigan/files/201506/restaurant_wikimedia.jpg",
                 "restaurant_address": "123 street",
+                "restaurant_location": {
+                    "longitude": "",
+                    "latitude": ""
+                },
                 "restaurant_number": 123456789,
                 "restaurant_manager_name": "Saim",
                 "restaurant_owner_name": "ABC",
@@ -112,7 +224,57 @@
                 "country": "Pakistan",
                 "city": "islamabad",
                 "city_Id": "c3",
-                "restaurnat_status": "Active"
+                "restaurnat_status": "Active",
+                "restaurant_opening_days": [{
+                        "day": "Monday",
+                        "timing": "11 AM to 8 PM"
+                    },
+                    {
+                        "day": "Tuesay",
+                        "timing": "11 AM to 8 PM"
+                    },
+                    {
+                        "day": "Wednesday",
+                        "timing": "11 AM to 8 PM"
+                    },
+                    {
+                        "day": "Thursday",
+                        "timing": "11 AM to 8 PM"
+                    },
+                    {
+                        "day": "Friday",
+                        "timing": "11 AM to 8 PM"
+                    },
+                    {
+                        "day": "Saturday",
+                        "timing": "11 AM to 8 PM"
+                    },
+                    {
+                        "day": "Sunday",
+                        "timing": "11 AM to 8 PM"
+                    }
+                ],
+                "cuisines": [{
+                        "cuisineId": "1",
+                        "cuisineName": "Cuisine 1",
+                        "cuisineMenu": ["menu1", "menu2", "menu3"]
+                    },
+                    {
+                        "cuisineId": "2",
+                        "cuisineName": "Cuisine 2",
+                        "cuisineMenu": ["menu1", "menu2", "menu3"]
+                    },
+                    {
+                        "cuisineId": "3",
+                        "cuisineName": "Cuisine 3",
+                        "cuisineMenu": ["menu1", "menu2", "menu3"]
+                    },
+                    {
+                        "cuisineId": "4",
+                        "cuisineName": "Cuisine 4",
+                        "cuisineMenu": ["menu1", "menu2", "menu3"]
+                    }
+                ]
             },
 
             {
@@ -121,13 +283,67 @@
                 "restaurant_image": "http://belvedereshantigram.com/wp-content/uploads/2016/08/restaurants1.jpg",
                 "restaurant_address": "123 street",
                 "restaurant_number": 123456789,
+                "restaurant_location": {
+                    "longitude": "",
+                    "latitude": ""
+                },
                 "restaurant_manager_name": "Saim",
                 "restaurant_owner_name": "ABC",
                 "restaurant_category": "delivery",
                 "country": "Pakistan",
                 "city": "karachi",
                 "city_Id": "c1",
-                "restaurnat_status": "Active"
+                "restaurnat_status": "Active",
+                "restaurant_opening_days": [{
+                        "day": "Monday",
+                        "timing": "11 AM to 8 PM"
+                    },
+                    {
+                        "day": "Tuesay",
+                        "timing": "11 AM to 8 PM"
+                    },
+                    {
+                        "day": "Wednesday",
+                        "timing": "11 AM to 8 PM"
+                    },
+                    {
+                        "day": "Thursday",
+                        "timing": "11 AM to 8 PM"
+                    },
+                    {
+                        "day": "Friday",
+                        "timing": "11 AM to 8 PM"
+                    },
+                    {
+                        "day": "Saturday",
+                        "timing": "11 AM to 8 PM"
+                    },
+                    {
+                        "day": "Sunday",
+                        "timing": "11 AM to 8 PM"
+                    }
+                ],
+                "cuisines": [{
+                        "cuisineId": "1",
+                        "cuisineName": "Cuisine 1",
+                        "cuisineMenu": ["menu1", "menu2", "menu3"]
+                    },
+                    {
+                        "cuisineId": "2",
+                        "cuisineName": "Cuisine 2",
+                        "cuisineMenu": ["menu1", "menu2", "menu3"]
+                    },
+                    {
+                        "cuisineId": "3",
+                        "cuisineName": "Cuisine 3",
+                        "cuisineMenu": ["menu1", "menu2", "menu3"]
+                    },
+                    {
+                        "cuisineId": "4",
+                        "cuisineName": "Cuisine 4",
+                        "cuisineMenu": ["menu1", "menu2", "menu3"]
+                    }
+                ]
             },
 
             {
@@ -135,14 +351,68 @@
                 "restaurant_name": "restaurant-5",
                 "restaurant_image": "https://www.gordonramsayrestaurants.com/assets/Uploads/_resampled/CroppedFocusedImage121578650-50-USC-Christmas-Gordon-Ramsay.gif",
                 "restaurant_address": "123 street",
-                "restaurant_number": 123456789,
+                "restaurant_location": {
+                    "longitude": "",
+                    "latitude": ""
+                },
+                "restaurant_number": 23424232,
                 "restaurant_manager_name": "Saim",
                 "restaurant_owner_name": "ABC",
                 "restaurant_category": "dine-in",
                 "country": "Pakistan",
                 "city": "karachi",
                 "city_Id": "c1",
-                "restaurnat_status": "Active"
+                "restaurnat_status": "Active",
+                "restaurant_opening_days": [{
+                        "day": "Monday",
+                        "timing": "11 AM to 8 PM"
+                    },
+                    {
+                        "day": "Tuesay",
+                        "timing": "11 AM to 8 PM"
+                    },
+                    {
+                        "day": "Wednesday",
+                        "timing": "11 AM to 8 PM"
+                    },
+                    {
+                        "day": "Thursday",
+                        "timing": "11 AM to 8 PM"
+                    },
+                    {
+                        "day": "Friday",
+                        "timing": "11 AM to 8 PM"
+                    },
+                    {
+                        "day": "Saturday",
+                        "timing": "11 AM to 8 PM"
+                    },
+                    {
+                        "day": "Sunday",
+                        "timing": "11 AM to 8 PM"
+                    }
+                ],
+                "cuisines": [{
+                        "cuisineId": "1",
+                        "cuisineName": "Cuisine 1",
+                        "cuisineMenu": ["menu1", "menu2", "menu3"]
+                    },
+                    {
+                        "cuisineId": "2",
+                        "cuisineName": "Cuisine 2",
+                        "cuisineMenu": ["menu1", "menu2", "menu3"]
+                    },
+                    {
+                        "cuisineId": "3",
+                        "cuisineName": "Cuisine 3",
+                        "cuisineMenu": ["menu1", "menu2", "menu3"]
+                    },
+                    {
+                        "cuisineId": "4",
+                        "cuisineName": "Cuisine 4",
+                        "cuisineMenu": ["menu1", "menu2", "menu3"]
+                    }
+                ]
             },
 
             {
@@ -150,7 +420,11 @@
                 "restaurant_name": "restaurant-6",
                 "restaurant_image": "https://www.gordonramsayrestaurants.com/assets/Uploads/_resampled/CroppedFocusedImage121578650-50-USC-Christmas-Gordon-Ramsay.gif",
                 "restaurant_address": "123 street",
-                "restaurant_number": 123456789,
+                "restaurant_location": {
+                    "longitude": "",
+                    "latitude": ""
+                },
+                "restaurant_number": 42342134,
                 "restaurant_manager_name": "Saim",
                 "restaurant_owner_name": "ABC",
                 "restaurant_category": "delivery",
@@ -158,6 +432,35 @@
                 "city": "lahore",
                 "city_Id": "c2",
                 "restaurnat_status": "Active",
+                "restaurant_opening_days": [{
+                        "day": "Monday",
+                        "timing": "11 AM to 8 PM"
+                    },
+                    {
+                        "day": "Tuesay",
+                        "timing": "11 AM to 8 PM"
+                    },
+                    {
+                        "day": "Wednesday",
+                        "timing": "11 AM to 8 PM"
+                    },
+                    {
+                        "day": "Thursday",
+                        "timing": "11 AM to 8 PM"
+                    },
+                    {
+                        "day": "Friday",
+                        "timing": "11 AM to 8 PM"
+                    },
+                    {
+                        "day": "Saturday",
+                        "timing": "11 AM to 8 PM"
+                    },
+                    {
+                        "day": "Sunday",
+                        "timing": "11 AM to 8 PM"
+                    }
+                ],
                 "cuisines": [{
                         "cuisineId": "1",
                         "cuisineName": "Cuisine 1",
@@ -186,7 +489,11 @@
                 "restaurant_name": "restaurant-7",
                 "restaurant_image": "https://www.gordonramsayrestaurants.com/assets/Uploads/_resampled/CroppedFocusedImage121578650-50-USC-Christmas-Gordon-Ramsay.gif",
                 "restaurant_address": "123 street",
-                "restaurant_number": 123456789,
+                "restaurant_location": {
+                    "longitude": "",
+                    "latitude": ""
+                },
+                "restaurant_number": 3234223,
                 "restaurant_manager_name": "Saim",
                 "restaurant_owner_name": "ABC",
                 "restaurant_category": "delivery",
@@ -194,6 +501,35 @@
                 "city": "quetta",
                 "city_Id": "c2",
                 "restaurnat_status": "Active",
+                "restaurant_opening_days": [{
+                        "day": "Monday",
+                        "timing": "11 AM to 8 PM"
+                    },
+                    {
+                        "day": "Tuesay",
+                        "timing": "11 AM to 8 PM"
+                    },
+                    {
+                        "day": "Wednesday",
+                        "timing": "11 AM to 8 PM"
+                    },
+                    {
+                        "day": "Thursday",
+                        "timing": "11 AM to 8 PM"
+                    },
+                    {
+                        "day": "Friday",
+                        "timing": "11 AM to 8 PM"
+                    },
+                    {
+                        "day": "Saturday",
+                        "timing": "11 AM to 8 PM"
+                    },
+                    {
+                        "day": "Sunday",
+                        "timing": "11 AM to 8 PM"
+                    }
+                ],
                 "cuisines": [{
                         "cuisineId": "1",
                         "cuisineName": "Cuisine 1",
@@ -222,7 +558,11 @@
                 "restaurant_name": "restaurant-8",
                 "restaurant_image": "https://www.gordonramsayrestaurants.com/assets/Uploads/_resampled/CroppedFocusedImage121578650-50-USC-Christmas-Gordon-Ramsay.gif",
                 "restaurant_address": "123 street",
-                "restaurant_number": 123456789,
+                "restaurant_location": {
+                    "longitude": "",
+                    "latitude": ""
+                },
+                "restaurant_number": 2313413,
                 "restaurant_manager_name": "Saim",
                 "restaurant_owner_name": "ABC",
                 "restaurant_category": "delivery",
@@ -230,6 +570,35 @@
                 "city": "multan",
                 "city_Id": "c2",
                 "restaurnat_status": "Active",
+                "restaurant_opening_days": [{
+                        "day": "Monday",
+                        "timing": "11 AM to 8 PM"
+                    },
+                    {
+                        "day": "Tuesay",
+                        "timing": "11 AM to 8 PM"
+                    },
+                    {
+                        "day": "Wednesday",
+                        "timing": "11 AM to 8 PM"
+                    },
+                    {
+                        "day": "Thursday",
+                        "timing": "11 AM to 8 PM"
+                    },
+                    {
+                        "day": "Friday",
+                        "timing": "11 AM to 8 PM"
+                    },
+                    {
+                        "day": "Saturday",
+                        "timing": "11 AM to 8 PM"
+                    },
+                    {
+                        "day": "Sunday",
+                        "timing": "11 AM to 8 PM"
+                    }
+                ],
                 "cuisines": [{
                         "cuisineId": "1",
                         "cuisineName": "Cuisine 1",

@@ -5,15 +5,17 @@ import {withStyles} from 'material-ui/styles';
 import Card, {CardActions, CardContent, CardMedia} from 'material-ui/Card';
 import Button from 'material-ui/Button';
 import Typography from 'material-ui/Typography';
+import Grid from 'material-ui/Grid';
+import Paper from 'material-ui/Paper';
 
 import RestaurantInfoTab from './restaurantInfoTab';
 
 const REQ_URL = "http://localhost:3001/home";
-const styles = {
+const styles = theme =>( {
     root:{
-        minWidth:'99%',
-        width:'99%',
-        margin:'2px auto',
+        // minWidth:'99%',
+        width:'85%',
+        margin:'20px auto',
     },
     card: {
         minWidth:'100%',
@@ -22,9 +24,6 @@ const styles = {
     media: {
         height: 350
     },
-    typography:{
-    fontSize:'2.5rem'
-    },
     buttonDIV:{
         padding:16,
         fontSize:'110%',
@@ -32,8 +31,15 @@ const styles = {
     button:{
         fontSize:'100%',
         
-    }
-};
+    },
+    sidecard: {
+    maxWidth: 200,
+    height: 200,
+  },
+    sidemedia: {
+    height: 200,
+  },
+});
 class RestaurantsMenu extends Component {
      constructor(props) {
         super(props);
@@ -52,28 +58,74 @@ class RestaurantsMenu extends Component {
             })
 
     }
-    // renderList = (restaurantList) => {
-    //     // {console.log(restaurantList.filter(restau =>restau.city==this.props.match.params.resCity))}
-    //     //filter restaurants accoriding to CITY ==========================================================
-    //     const filterList = restaurantList.filter(restau =>restau.cuisines) ;
-    //     return restaurantList.map((item, index) => {
-    //         return (    
-    //             // console.log(item.cuisines)
-    //             item.cuisines.map((obj,i)=>  <div> {obj.cuisineId}   </div>  )
-                
-   
-    //         );
-    //     })
-    // }
+    renderList = (restaurantList) => {
+        const {classes} = this.props;
+        // {console.log(restaurantList.filter(restau =>restau.restaurant_name===this.props.match.params.resName))}
+        const filterRest = restaurantList.filter(restau =>restau.restaurant_name===this.props.match.params.resName);
+        return filterRest.map((item,index)=>{
+            return (
+                <Card key={index} className={classes.card}>
+                    <CardMedia 
+                        className={classes.media}
+                        image={item.restaurant_image}
+                        title={item.restaurant_name}
+                     />
 
+                    <CardContent>
+                        <Typography style={{textTransform: 'Capitalize', fontWeight: 'bold'}} type="headline" component="h2">
+                            {item.restaurant_name.replace(/-/g, ' ')}
+                        </Typography>
+                    </CardContent>
+
+                    <CardActions className={classes.buttonDIV}>
+                        <Link to={`${this.props.match.url}/orders`}>
+                        <Button raised color="primary" className={classes.button}>
+                            Online Orders
+                        </Button>
+                        </Link>
+                    </CardActions>
+                </Card>
+            )
+        })
+    }
     render() {
         const {classes} = this.props;
+        // console.log(this.props);
+        // console.log(this.state.restaurants.filter(restau =>restau.restaurant_name===this.props.match.params.resName));
         return (
             <div className={classes.root}>
-            {/* {this.renderList(this.state.restaurants)} */}
+            {/* {console.log(this.state.restaurants)} */}
+
+            <Grid container spacing={24}>
+                <Grid item xs={12} md={8}>
+                {this.renderList(this.state.restaurants)}
+                 <RestaurantInfoTab abc={this.state.restaurants.filter(restau =>restau.restaurant_name===this.props.match.params.resName)}/>
+                </Grid>
+
+                <Grid item md={4}>
+                    <Paper>
+                        <span>Suggested Resturants</span>
+                        <Card className={classes.sidecard}>
+                            <CardMedia
+                                className={classes.sidemedia}
+                                image=""
+                                title=""
+                             />
+                            <CardContent>
+                                <Typography>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, eveniet!</p>
+                                </Typography>
+                            </CardContent>
+                        </Card>
+
+
+                    </Paper>
+                </Grid>
+            </Grid>
+
             {/* //////////////////////////////////////////////////////////// */}
 
-      <Card className={classes.card}>
+      {/* <Card className={classes.card}>
         <CardMedia
           className={classes.media}
           image="http://c.amsterdam/wp-content/uploads/2015/09/restaurant-c-michiel-van-der-eerde-amsterdam-2.jpg"
@@ -81,13 +133,14 @@ class RestaurantsMenu extends Component {
         />
         <CardContent>
           <Typography className={classes.typography} type="headline" component="h2">
-           Restaurant 1
+           {this.props.match.params.resName}
           </Typography>
           <Typography component="p">
             Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
             across all continents except Antarctica
           </Typography>
         </CardContent>
+
         <CardActions className={classes.buttonDIV}>
         <Link to={`${this.props.match.url}/orders`}>
           <Button raised color="primary" className={classes.button}>
@@ -95,10 +148,10 @@ class RestaurantsMenu extends Component {
           </Button>
         </Link>
         </CardActions>
-      </Card>
+        
+      </Card> */}
 
       {/* Tab Component */}
-      <RestaurantInfoTab />
             </div>
         )
     }

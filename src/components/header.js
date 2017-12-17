@@ -9,6 +9,9 @@ import {Button} from 'material-ui';
 // import IconButton from 'material-ui/IconButton';
 // import MenuIcon from 'material-ui-icons/Menu';
 
+import TextField from 'material-ui/TextField';
+import Dialog, {DialogActions, DialogContent, DialogContentText, DialogTitle} from 'material-ui/Dialog';
+
 import {Link} from 'react-router-dom';
 
 
@@ -39,6 +42,55 @@ const styles = theme => ({
     }
 });
 
+class SignIn extends React.Component  {
+    state={
+        open: false,
+    }
+
+    handleClickOpen = () => this.setState({open:true})
+    handleClickClose = () => this.setState({open:false})
+
+    render(){
+        return(
+            <div>
+                <Button onClick={this.handleClickOpen}>Login</Button>
+                <Dialog
+                open={this.state.open}
+                onClose={this.handleClickClose}
+                aria-labelledby="form-dialog-title"
+                >
+                <DialogTitle>Login to foodMasty
+                
+                </DialogTitle>
+                <DialogContent>
+                    <TextField
+                        margin="dense"
+                        id="email"
+                        label="Enter Your Email"
+                        type="email"
+                        fullWidth
+                    ></TextField>
+                    <TextField
+                        margin="dense"
+                        id="password"
+                        label="Enter Your Password"
+                        type="password"
+                        fullWidth
+                    ></TextField>
+
+                    <Button margin="dense" fullWidth raised color="primary">Login</Button>
+                    <Button margin="dense" fullWidth raised style={{backgroundColor:'red', color: 'white'}}>Login to Google</Button>
+                </DialogContent>
+                <DialogActions>
+                    <Button onClick={this.handleClickClose} color="primary">Close</Button>
+                </DialogActions>
+                </Dialog>
+            </div>
+        )
+    }
+}
+
+
 const Header = (props) => {
     const {classes} = props;
     return (
@@ -59,10 +111,10 @@ const Header = (props) => {
                             textDecoration: 'none'
                         }}>{info.title}</Link>
                     </Typography>
-                    <Link key={"buttonLogin"} to="/login">
+                    {/* <Link key={"buttonLogin"} to="/login">
                         <Button>Login</Button>
-                    </Link>
-                    
+                    </Link> */}
+                    <SignIn />
                 </Toolbar>
             </AppBar>
         </div>
