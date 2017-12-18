@@ -1,3 +1,7 @@
 .navbar-default {
     background-color: rgba(44, 44, 40, 0.185);
 }
+
+* {
+    font-Size: 14px;
+}

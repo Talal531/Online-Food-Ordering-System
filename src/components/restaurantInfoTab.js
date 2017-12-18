@@ -119,12 +119,16 @@ function TabContainer(props) {
 
 const styles = {
     root: {
+        fontSize:'16px',
         fontStyle:'Robotto',
         flexGrow: 1,
         width: '100%',
         marginTop: 24,
         backgroundColor: '#fff'
-    }
+    },
+    // tab:{
+    //     fontSize: '16px'
+    // }
 };
 
 //TAB component
@@ -155,8 +159,8 @@ class RestaurantInfoTab extends Component {
                         scrollButtons="on"
                         indicatorColor="primary"
                         textColor="primary">
-                        <Tab label="Info"/>
-                        <Tab label="Reviews"/>                        
+                        <Tab style={styles.tab} label="Info"/>
+                        <Tab style={styles.tab} label="Reviews"/>                        
                     </Tabs>
                 </AppBar>
 
@@ -168,9 +172,9 @@ class RestaurantInfoTab extends Component {
                                 <div>
                                     <Grid container spacing={10}>
                                          <Grid item xs={12} sm={12} md={6} lg={6} xl={3}>
-                                            <Typography type="headline" component="h2">
+                                            <h3>
                                                 <span style={{color: 'green', fontFamily: 'serif'}} >Contact Number: </span> <br /> {item.restaurant_number}
-                                            </Typography>
+                                            </h3>
 
                                             <Typography type="headline" component="h2"><br />
                                                 <span>Opening & Hours: </span>

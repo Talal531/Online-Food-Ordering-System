@@ -28,6 +28,9 @@ const styles = theme => ({
     root: {
         flexGrow:1
     },
+    button:{
+        fontSize: '16px'
+    },
 })
 
 class Restaurants extends Component {
@@ -49,6 +52,7 @@ class Restaurants extends Component {
 
     }
     renderList = (restaurantList) => {
+        const { classes } = this.props;
         // console.log(this.props)
         // {console.log(restaurantList.filter(restau =>restau.city==this.props.match.params.resCity))}
         //filter restaurants accoriding to CITY ==========================================================
@@ -66,23 +70,22 @@ class Restaurants extends Component {
 
                         </Link>
                         <CardContent>
-                            <Typography
+                            <h3 
                                 style={{
                                 textTransform: 'capitalize'
-                            }}
-                                type="headline"
-                                component="h2">
+                                }}
+                            >
                                 {`${item.restaurant_name}`}
-                            </Typography>
-                            <Typography component="p">
+                            </h3>
+                            <p>
                                 Lizards are a widespread group of squamate reptiles, with over 6,000 species,
                                 ranging across all continents except Antarctica
-                            </Typography>
+                            </p>
                         </CardContent>
 
                         <CardActions>
                         <Link to={`${this.props.match.url}/${item.restaurant_name}/orders`}>
-                            <Button dense color="primary">
+                            <Button className={classes.button} color="primary">
                                 Order Online
                             </Button>
                             </Link>
@@ -103,12 +106,12 @@ class Restaurants extends Component {
                 width: '95%',
                 margin: '10px auto'
             }}>
-                <h3>Best Restaurants in&nbsp;
+                <h2>Best Restaurants in&nbsp;
                     <span
                         style={{
-                        textTransform: 'capitalize'
+                        textTransform: 'capitalize',
                     }}>{this.props.match.params.resCity}</span>
-                </h3>
+                </h2>
 
                 {/* <Grid container className={classes.root}>
                     <Grid item sm hidden={{ xlUp : true}}>
@@ -162,4 +165,4 @@ Restaurants.propTypes = {
 
 export default withStyles(styles)(Restaurants);
 
-// export default Restaurants;
+

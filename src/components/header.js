@@ -108,7 +108,8 @@ const Header = (props) => {
                             exact={true}
                             style={{
                             color: '#fff',
-                            textDecoration: 'none'
+                            textDecoration: 'none',
+                            fontFamily: 'Monoton'
                         }}>{info.title}</Link>
                     </Typography>
                     {/* <Link key={"buttonLogin"} to="/login">
