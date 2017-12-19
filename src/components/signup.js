@@ -7,20 +7,8 @@ import Toolbar from 'material-ui/Toolbar';
 import Typography from 'material-ui/Typography';
 import { Button } from 'material-ui';
 import "../firebase/firebaseConf";
-import Signup from "./signup"
-// import IconButton from 'material-ui/IconButton';
-// import MenuIcon from 'material-ui-icons/Menu';
-
 import TextField from 'material-ui/TextField';
 import Dialog, { DialogActions, DialogContent, DialogContentText, DialogTitle } from 'material-ui/Dialog';
-
-import { Link } from 'react-router-dom';
-
-
-const info = {
-    title: "foodMasty"
-}
-
 const styles = theme => ({
     root: {
         // marginTop: theme.spacing.unit * 3,
@@ -44,11 +32,12 @@ const styles = theme => ({
     }
 });
 
-class SignIn extends React.Component {
+class SignUp extends React.Component {
     constructor(props) {
         super(props);
-        this.login = this.login.bind(this);
+        this.login = this.signup.bind(this);
         this.googleSignin = this.googleSignin.bind(this);
+
         this.state = {
             open: false,
         }
@@ -59,27 +48,46 @@ class SignIn extends React.Component {
     handleClickOpen = () => this.setState({ open: true })
     handleClickClose = () => this.setState({ open: false })
 
-    //Login for firebase authentication
-    login = (event) => {
-        console.log("login function clicked.!")
+    //Signup for firebase authentication
+    signup = (event) => {
         const email = this.refs.email.value;
         const password = this.refs.password.value;
-        console.log(email, password);
+        const name = this.refs.name.value;
+
+        console.log(email, password)
         const auth = firebase.auth();
-        let promise = auth.signInWithEmailAndPassword(email, password);
+        let promise = auth.createUserWithEmailAndPassword(email, password);
         promise
-            .then(redirect => {
-                window.location = 'http://localhost:3000/                         '
-            })
-            .catch(e => {
-                let err = e.message;
-                console.log(err);
+            .then(user => {
+                let lout =document.getElementById('logout');
+                lout.classList.remove('hid');
+                let err = `Wellcome ${user.email} in Our Application`;
+
+                firebase.database().ref(`users/${user.uid}`).set({
+                    email: user.email,
+                    password: password,
+                    name: name
+                });
+                function func() {
+                    window.location = "http://localhost:3000/";
+                }
+                setTimeout(func, 3000);
+
+                // window.location = "http://localhost:3000/"; 
+                // console.log(user);
                 this.setState({
                     err: err
-                });
+                })
             })
+        promise.catch(e => {
+            let err = e.message;
+            // console.log(err);
+            this.setState({
+                err: err
+            });
+        })
     }
-    //firebase login ended..
+    //firebase signup ended..
 
     //Google Signin authentication with firebase
     googleSignin = () => {
@@ -110,12 +118,12 @@ class SignIn extends React.Component {
     //Google Signin authentication with firebase ended..
 
 
-
     render() {
         return (
             <div>
                 {/* <Button onClick={this.signup}>Create Account</Button> */}
-                <Button onClick={this.handleClickOpen}>Login</Button>
+                <Button onClick={this.handleClickOpen} className="hide" id="logout">Logout</Button>
+                <Button onClick={this.handleClickOpen} className="hid" >Create Account</Button>
                 <Dialog
                     open={this.state.open}
                     onClose={this.handleClickClose}
@@ -127,6 +135,10 @@ class SignIn extends React.Component {
                     <DialogContent>
                         <input
                             margin="dense"
+                            id="name" ref="name" type="name" placeholder="Enter Your Name"
+                        ></input>
+                        <input
+                            margin="dense"
                             id="email" ref="email" type="email" placeholder="Enter Your Email"
                         ></input>
                         <input
@@ -134,8 +146,8 @@ class SignIn extends React.Component {
                             id="password" ref="password" type="password" placeholder="Enter Your Password"
                         ></input>
 
-                        <Button margin="dense" fullWidth raised color="primary" onClick={this.login}>Login</Button>
-                        <Button margin="dense" fullWidth raised style={{ backgroundColor: 'red', color: 'white' }} onClick={this.googleSignin}>SIgnin with Google</Button>
+                        <Button margin="dense" fullWidth raised color="primary" onClick={this.signup}>Signup</Button>
+                        <Button margin="dense" fullWidth raised style={{ backgroundColor: 'red', color: 'white' }} onClick={this.googleSignin} >Login to Google</Button>
                     </DialogContent>
                     <DialogActions>
                         <Button onClick={this.handleClickClose} color="primary">Close</Button>
@@ -147,40 +159,8 @@ class SignIn extends React.Component {
 }
 
 
-const Header = (props) => {
-    const { classes } = props;
-    return (
-
-        <div >
-            <AppBar position="static" className={classes.root}>
-                <Toolbar>
-                    {/* <IconButton className={classes.menuButton} color="contrast" aria-label="Menu">
-                        <MenuIcon/>
-                    </IconButton> */}
-                    <Typography type="title" color="inherit" className={classes.flex}>
-                        <Link
-                            key={info.title}
-                            to="/"
-                            exact={true}
-                            style={{
-                                color: '#fff',
-                                textDecoration: 'none',
-                                fontFamily: 'Monoton'
-                            }}>{info.title}</Link>
-                    </Typography>
-                    {/* <Link key={"buttonLogin"} to="/login">
-                        <Button>Login</Button>
-                    </Link> */}
-                    <Signup />
-                    <SignIn />
-                </Toolbar>
-            </AppBar>
-        </div>
-    );
-}
-
-Header.propTypes = {
+SignUp.propTypes = {
     classes: PropTypes.object.isRequired
 };
 
-export default withStyles(styles)(Header);
+export default withStyles(styles)(SignUp);
