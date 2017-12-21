@@ -64,7 +64,7 @@ import TextField from 'material-ui/TextField';
 
 const styles = theme => ({
     divContainer:{
-        backgroundImage: `url("https://lorempixel.com/1349/500/food/4/")`,
+        backgroundImage: `url("https://lorempixel.com/1349/500/food/1/")`,
         height: '80vh',
         backgroundSize: 'cover',
         backgroundPosition: 'center center',

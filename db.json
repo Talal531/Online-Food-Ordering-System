@@ -74,7 +74,7 @@
                 "restaurant_id": "1",
                 "restaurant_name": "restaurant-1",
                 "restaurant_image": "http://c.amsterdam/wp-content/uploads/2015/09/restaurant-c-michiel-van-der-eerde-amsterdam-2.jpg",
-                "restaurant_address": "123 street",
+                "restaurant_address": "North Karachi",
                 "restaurant_number": 123456789,
                 "restaurant_location": {
                     "longitude": "",
@@ -118,23 +118,88 @@
                 ],
                 "cuisines": [{
                         "cuisineId": "1",
-                        "cuisineName": "Cuisine 1",
-                        "cuisineMenu": ["menu1", "menu2", "menu3"]
+                        "cuisineName": "Burger",
+                        "cuisineMenu": [{
+                            "id": 1,
+                            "name": "P",
+                            "price": 200
+                        }, {
+                            "id": 2,
+                            "name": "menu2",
+                            "price": 300
+                        }, {
+                            "id": 3,
+                            "name": "menu3",
+                            "price": 245
+                        }]
                     },
                     {
                         "cuisineId": "2",
-                        "cuisineName": "Cuisine 2",
-                        "cuisineMenu": ["menu1", "menu2", "menu3"]
+                        "cuisineName": "Fast Foods",
+                        "cuisineMenu": [{
+                            "id": 1,
+                            "name": "menu1",
+                            "price": 200
+                        }, {
+                            "id": 2,
+                            "name": "menu2",
+                            "price": 300
+                        }, {
+                            "id": 3,
+                            "name": "menu3",
+                            "price": 245
+                        }]
                     },
                     {
                         "cuisineId": "3",
-                        "cuisineName": "Cuisine 3",
-                        "cuisineMenu": ["menu1", "menu2", "menu3"]
+                        "cuisineName": "Pizza",
+                        "cuisineMenu": [{
+                            "id": 1,
+                            "name": "menu1",
+                            "price": 200
+                        }, {
+                            "id": 2,
+                            "name": "menu2",
+                            "price": 300
+                        }, {
+                            "id": 3,
+                            "name": "menu3",
+                            "price": 245
+                        }]
                     },
                     {
                         "cuisineId": "4",
-                        "cuisineName": "Cuisine 4",
-                        "cuisineMenu": ["menu1", "menu2", "menu3"]
+                        "cuisineName": "Beverages",
+                        "cuisineMenu": [{
+                            "id": 1,
+                            "name": "menu1",
+                            "price": 200
+                        }, {
+                            "id": 2,
+                            "name": "menu2",
+                            "price": 300
+                        }, {
+                            "id": 3,
+                            "name": "menu3",
+                            "price": 245
+                        }]
+                    },
+                    {
+                        "cuisineId": "5",
+                        "cuisineName": "Bakery",
+                        "cuisineMenu": [{
+                            "id": 1,
+                            "name": "menu1",
+                            "price": 200
+                        }, {
+                            "id": 2,
+                            "name": "menu2",
+                            "price": 300
+                        }, {
+                            "id": 3,
+                            "name": "menu3",
+                            "price": 245
+                        }]
                     }
                 ]
             },
@@ -143,7 +208,7 @@
                 "restaurant_id": "2",
                 "restaurant_name": "restaurant-2",
                 "restaurant_image": "http://www.stanleyhotel.com/uploads/9/8/6/9/98696462/published/20111115-cascades001v2_3.jpeg?1492712982",
-                "restaurant_address": "123 street",
+                "restaurant_address": "North Nazimabad",
                 "restaurant_location": {
                     "longitude": "",
                     "latitude": ""
@@ -188,22 +253,87 @@
                 "cuisines": [{
                         "cuisineId": "1",
                         "cuisineName": "Cuisine 1",
-                        "cuisineMenu": ["menu1", "menu2", "menu3"]
+                        "cuisineMenu": [{
+                            "id": 1,
+                            "name": "menu1",
+                            "price": 200
+                        }, {
+                            "id": 2,
+                            "name": "menu2",
+                            "price": 500
+                        }, {
+                            "id": 3,
+                            "name": "menu3",
+                            "price": 245
+                        }]
                     },
                     {
                         "cuisineId": "2",
                         "cuisineName": "Cuisine 2",
-                        "cuisineMenu": ["menu1", "menu2", "menu3"]
+                        "cuisineMenu": [{
+                            "id": 1,
+                            "name": "menu1",
+                            "price": 431
+                        }, {
+                            "id": 2,
+                            "name": "menu2",
+                            "price": 523
+                        }, {
+                            "id": 3,
+                            "name": "menu3",
+                            "price": 423
+                        }]
                     },
                     {
                         "cuisineId": "3",
                         "cuisineName": "Cuisine 3",
-                        "cuisineMenu": ["menu1", "menu2", "menu3"]
+                        "cuisineMenu": [{
+                            "id": 1,
+                            "name": "menu1",
+                            "price": 532
+                        }, {
+                            "id": 2,
+                            "name": "menu2",
+                            "price": 423
+                        }, {
+                            "id": 3,
+                            "name": "menu3",
+                            "price": 123
+                        }]
                     },
                     {
                         "cuisineId": "4",
                         "cuisineName": "Cuisine 4",
-                        "cuisineMenu": ["menu1", "menu2", "menu3"]
+                        "cuisineMenu": [{
+                            "id": 1,
+                            "name": "menu1",
+                            "price": 542
+                        }, {
+                            "id": 2,
+                            "name": "menu2",
+                            "price": 234
+                        }, {
+                            "id": 3,
+                            "name": "menu3",
+                            "price": 252
+                        }]
+                    },
+                    {
+                        "cuisineId": "5",
+                        "cuisineName": "Cuisine 5",
+                        "cuisineMenu": [{
+                            "id": 1,
+                            "name": "menu1",
+                            "price": 423
+                        }, {
+                            "id": 2,
+                            "name": "menu2",
+                            "price": 563
+                        }, {
+                            "id": 3,
+                            "name": "menu3",
+                            "price": 764
+                        }]
                     }
                 ]
             },
@@ -212,7 +342,7 @@
                 "restaurant_id": "3",
                 "restaurant_name": "restaurant-3",
                 "restaurant_image": "http://mediad.publicbroadcasting.net/p/michigan/files/201506/restaurant_wikimedia.jpg",
-                "restaurant_address": "123 street",
+                "restaurant_address": "FB Area Gulberg",
                 "restaurant_location": {
                     "longitude": "",
                     "latitude": ""
@@ -220,7 +350,7 @@
                 "restaurant_number": 123456789,
                 "restaurant_manager_name": "Saim",
                 "restaurant_owner_name": "ABC",
-                "restaurant_category": "dine-in",
+                "restaurant_category": "delivery, dine-in",
                 "country": "Pakistan",
                 "city": "islamabad",
                 "city_Id": "c3",
@@ -257,22 +387,87 @@
                 "cuisines": [{
                         "cuisineId": "1",
                         "cuisineName": "Cuisine 1",
-                        "cuisineMenu": ["menu1", "menu2", "menu3"]
+                        "cuisineMenu": [{
+                            "id": 1,
+                            "name": "menu1",
+                            "price": 463
+                        }, {
+                            "id": 2,
+                            "name": "menu2",
+                            "price": 65
+                        }, {
+                            "id": 3,
+                            "name": "menu3",
+                            "price": 356
+                        }]
                     },
                     {
                         "cuisineId": "2",
                         "cuisineName": "Cuisine 2",
-                        "cuisineMenu": ["menu1", "menu2", "menu3"]
+                        "cuisineMenu": [{
+                            "id": 1,
+                            "name": "menu1",
+                            "price": 345
+                        }, {
+                            "id": 2,
+                            "name": "menu2",
+                            "price": 357
+                        }, {
+                            "id": 3,
+                            "name": "menu3",
+                            "price": 345
+                        }]
                     },
                     {
                         "cuisineId": "3",
                         "cuisineName": "Cuisine 3",
-                        "cuisineMenu": ["menu1", "menu2", "menu3"]
+                        "cuisineMenu": [{
+                            "id": 1,
+                            "name": "menu1",
+                            "price": 433
+                        }, {
+                            "id": 2,
+                            "name": "menu2",
+                            "price": 246
+                        }, {
+                            "id": 3,
+                            "name": "menu3",
+                            "price": 634
+                        }]
                     },
                     {
                         "cuisineId": "4",
                         "cuisineName": "Cuisine 4",
-                        "cuisineMenu": ["menu1", "menu2", "menu3"]
+                        "cuisineMenu": [{
+                            "id": 1,
+                            "name": "menu1",
+                            "price": 345
+                        }, {
+                            "id": 2,
+                            "name": "menu2",
+                            "price": 343
+                        }, {
+                            "id": 3,
+                            "name": "menu3",
+                            "price": 437
+                        }]
+                    },
+                    {
+                        "cuisineId": "5",
+                        "cuisineName": "Cuisine 5",
+                        "cuisineMenu": [{
+                            "id": 1,
+                            "name": "menu1",
+                            "price": 235
+                        }, {
+                            "id": 2,
+                            "name": "menu2",
+                            "price": 345
+                        }, {
+                            "id": 3,
+                            "name": "menu3",
+                            "price": 345
+                        }]
                     }
                 ]
             },
@@ -326,22 +521,87 @@
                 "cuisines": [{
                         "cuisineId": "1",
                         "cuisineName": "Cuisine 1",
-                        "cuisineMenu": ["menu1", "menu2", "menu3"]
+                        "cuisineMenu": [{
+                            "id": 1,
+                            "name": "menu1",
+                            "price": 467
+                        }, {
+                            "id": 2,
+                            "name": "menu2",
+                            "price": 345
+                        }, {
+                            "id": 3,
+                            "name": "menu3",
+                            "price": 434
+                        }]
                     },
                     {
                         "cuisineId": "2",
                         "cuisineName": "Cuisine 2",
-                        "cuisineMenu": ["menu1", "menu2", "menu3"]
+                        "cuisineMenu": [{
+                            "id": 1,
+                            "name": "menu1",
+                            "price": 546
+                        }, {
+                            "id": 2,
+                            "name": "menu2",
+                            "price": 356
+                        }, {
+                            "id": 3,
+                            "name": "menu3",
+                            "price": 764
+                        }]
                     },
                     {
                         "cuisineId": "3",
                         "cuisineName": "Cuisine 3",
-                        "cuisineMenu": ["menu1", "menu2", "menu3"]
+                        "cuisineMenu": [{
+                            "id": 1,
+                            "name": "menu1",
+                            "price": 546
+                        }, {
+                            "id": 2,
+                            "name": "menu2",
+                            "price": 467
+                        }, {
+                            "id": 3,
+                            "name": "menu3",
+                            "price": 567
+                        }]
                     },
                     {
                         "cuisineId": "4",
                         "cuisineName": "Cuisine 4",
-                        "cuisineMenu": ["menu1", "menu2", "menu3"]
+                        "cuisineMenu": [{
+                            "id": 1,
+                            "name": "menu1",
+                            "price": 245
+                        }, {
+                            "id": 2,
+                            "name": "menu2",
+                            "price": 546
+                        }, {
+                            "id": 3,
+                            "name": "menu3",
+                            "price": 345
+                        }]
+                    },
+                    {
+                        "cuisineId": "5",
+                        "cuisineName": "Cuisine 5",
+                        "cuisineMenu": [{
+                            "id": 1,
+                            "name": "menu1",
+                            "price": 345
+                        }, {
+                            "id": 2,
+                            "name": "menu2",
+                            "price": 345
+                        }, {
+                            "id": 3,
+                            "name": "menu3",
+                            "price": 756
+                        }]
                     }
                 ]
             },
@@ -395,22 +655,87 @@
                 "cuisines": [{
                         "cuisineId": "1",
                         "cuisineName": "Cuisine 1",
-                        "cuisineMenu": ["menu1", "menu2", "menu3"]
+                        "cuisineMenu": [{
+                            "id": 1,
+                            "name": "menu1",
+                            "price": 234
+                        }, {
+                            "id": 2,
+                            "name": "menu2",
+                            "price": 753
+                        }, {
+                            "id": 3,
+                            "name": "menu3",
+                            "price": 357
+                        }]
                     },
                     {
                         "cuisineId": "2",
                         "cuisineName": "Cuisine 2",
-                        "cuisineMenu": ["menu1", "menu2", "menu3"]
+                        "cuisineMenu": [{
+                            "id": 1,
+                            "name": "menu1",
+                            "price": 534
+                        }, {
+                            "id": 2,
+                            "name": "menu2",
+                            "price": 234
+                        }, {
+                            "id": 3,
+                            "name": "menu3",
+                            "price": 753
+                        }]
                     },
                     {
                         "cuisineId": "3",
                         "cuisineName": "Cuisine 3",
-                        "cuisineMenu": ["menu1", "menu2", "menu3"]
+                        "cuisineMenu": [{
+                            "id": 1,
+                            "name": "menu1",
+                            "price": 543
+                        }, {
+                            "id": 2,
+                            "name": "menu2",
+                            "price": 357
+                        }, {
+                            "id": 3,
+                            "name": "menu3",
+                            "price": 357
+                        }]
                     },
                     {
                         "cuisineId": "4",
                         "cuisineName": "Cuisine 4",
-                        "cuisineMenu": ["menu1", "menu2", "menu3"]
+                        "cuisineMenu": [{
+                            "id": 1,
+                            "name": "menu1",
+                            "price": 245
+                        }, {
+                            "id": 2,
+                            "name": "menu2",
+                            "price": 343
+                        }, {
+                            "id": 3,
+                            "name": "menu3",
+                            "price": 754
+                        }]
+                    },
+                    {
+                        "cuisineId": "5",
+                        "cuisineName": "Cuisine 5",
+                        "cuisineMenu": [{
+                            "id": 1,
+                            "name": "menu1",
+                            "price": 345
+                        }, {
+                            "id": 2,
+                            "name": "menu2",
+                            "price": 246
+                        }, {
+                            "id": 3,
+                            "name": "menu3",
+                            "price": 753
+                        }]
                     }
                 ]
             },
@@ -464,22 +789,87 @@
                 "cuisines": [{
                         "cuisineId": "1",
                         "cuisineName": "Cuisine 1",
-                        "cuisineMenu": ["menu1", "menu2", "menu3"]
+                        "cuisineMenu": [{
+                            "id": 1,
+                            "name": "menu1",
+                            "price": 643
+                        }, {
+                            "id": 2,
+                            "name": "menu2",
+                            "price": 345
+                        }, {
+                            "id": 3,
+                            "name": "menu3",
+                            "price": 345
+                        }]
                     },
                     {
                         "cuisineId": "2",
                         "cuisineName": "Cuisine 2",
-                        "cuisineMenu": ["menu1", "menu2", "menu3"]
+                        "cuisineMenu": [{
+                            "id": 1,
+                            "name": "menu1",
+                            "price": 563
+                        }, {
+                            "id": 2,
+                            "name": "menu2",
+                            "price": 234
+                        }, {
+                            "id": 3,
+                            "name": "menu3",
+                            "price": 245
+                        }]
                     },
                     {
                         "cuisineId": "3",
                         "cuisineName": "Cuisine 3",
-                        "cuisineMenu": ["menu1", "menu2", "menu3"]
+                        "cuisineMenu": [{
+                            "id": 1,
+                            "name": "menu1",
+                            "price": 524
+                        }, {
+                            "id": 2,
+                            "name": "menu2",
+                            "price": 662
+                        }, {
+                            "id": 3,
+                            "name": "menu3",
+                            "price": 435
+                        }]
                     },
                     {
                         "cuisineId": "4",
                         "cuisineName": "Cuisine 4",
-                        "cuisineMenu": ["menu1", "menu2", "menu3"]
+                        "cuisineMenu": [{
+                            "id": 1,
+                            "name": "menu1",
+                            "price": 123
+                        }, {
+                            "id": 2,
+                            "name": "menu2",
+                            "price": 653
+                        }, {
+                            "id": 3,
+                            "name": "menu3",
+                            "price": 325
+                        }]
+                    },
+                    {
+                        "cuisineId": "5",
+                        "cuisineName": "Cuisine 5",
+                        "cuisineMenu": [{
+                            "id": 1,
+                            "name": "menu1",
+                            "price": 425
+                        }, {
+                            "id": 2,
+                            "name": "menu2",
+                            "price": 235
+                        }, {
+                            "id": 3,
+                            "name": "menu3",
+                            "price": 423
+                        }]
                     }
                 ]
             },
@@ -533,22 +923,87 @@
                 "cuisines": [{
                         "cuisineId": "1",
                         "cuisineName": "Cuisine 1",
-                        "cuisineMenu": ["menu1", "menu2", "menu3"]
+                        "cuisineMenu": [{
+                            "id": 1,
+                            "name": "menu1",
+                            "price": 200
+                        }, {
+                            "id": 2,
+                            "name": "menu2",
+                            "price": 300
+                        }, {
+                            "id": 3,
+                            "name": "menu3",
+                            "price": 245
+                        }]
                     },
                     {
                         "cuisineId": "2",
                         "cuisineName": "Cuisine 2",
-                        "cuisineMenu": ["menu1", "menu2", "menu3"]
+                        "cuisineMenu": [{
+                            "id": 1,
+                            "name": "menu1",
+                            "price": 200
+                        }, {
+                            "id": 2,
+                            "name": "menu2",
+                            "price": 300
+                        }, {
+                            "id": 3,
+                            "name": "menu3",
+                            "price": 245
+                        }]
                     },
                     {
                         "cuisineId": "3",
                         "cuisineName": "Cuisine 3",
-                        "cuisineMenu": ["menu1", "menu2", "menu3"]
+                        "cuisineMenu": [{
+                            "id": 1,
+                            "name": "menu1",
+                            "price": 200
+                        }, {
+                            "id": 2,
+                            "name": "menu2",
+                            "price": 300
+                        }, {
+                            "id": 3,
+                            "name": "menu3",
+                            "price": 245
+                        }]
                     },
                     {
                         "cuisineId": "4",
                         "cuisineName": "Cuisine 4",
-                        "cuisineMenu": ["menu1", "menu2", "menu3"]
+                        "cuisineMenu": [{
+                            "id": 1,
+                            "name": "menu1",
+                            "price": 200
+                        }, {
+                            "id": 2,
+                            "name": "menu2",
+                            "price": 300
+                        }, {
+                            "id": 3,
+                            "name": "menu3",
+                            "price": 245
+                        }]
+                    },
+                    {
+                        "cuisineId": "5",
+                        "cuisineName": "Cuisine 5",
+                        "cuisineMenu": [{
+                            "id": 1,
+                            "name": "menu1",
+                            "price": 200
+                        }, {
+                            "id": 2,
+                            "name": "menu2",
+                            "price": 300
+                        }, {
+                            "id": 3,
+                            "name": "menu3",
+                            "price": 245
+                        }]
                     }
                 ]
             },
@@ -602,22 +1057,87 @@
                 "cuisines": [{
                         "cuisineId": "1",
                         "cuisineName": "Cuisine 1",
-                        "cuisineMenu": ["menu1", "menu2", "menu3"]
+                        "cuisineMenu": [{
+                            "id": 1,
+                            "name": "menu1",
+                            "price": 200
+                        }, {
+                            "id": 2,
+                            "name": "menu2",
+                            "price": 300
+                        }, {
+                            "id": 3,
+                            "name": "menu3",
+                            "price": 245
+                        }]
                     },
                     {
                         "cuisineId": "2",
                         "cuisineName": "Cuisine 2",
-                        "cuisineMenu": ["menu1", "menu2", "menu3"]
+                        "cuisineMenu": [{
+                            "id": 1,
+                            "name": "menu1",
+                            "price": 200
+                        }, {
+                            "id": 2,
+                            "name": "menu2",
+                            "price": 300
+                        }, {
+                            "id": 3,
+                            "name": "menu3",
+                            "price": 245
+                        }]
                     },
                     {
                         "cuisineId": "3",
                         "cuisineName": "Cuisine 3",
-                        "cuisineMenu": ["menu1", "menu2", "menu3"]
+                        "cuisineMenu": [{
+                            "id": 1,
+                            "name": "menu1",
+                            "price": 200
+                        }, {
+                            "id": 2,
+                            "name": "menu2",
+                            "price": 300
+                        }, {
+                            "id": 3,
+                            "name": "menu3",
+                            "price": 245
+                        }]
                     },
                     {
                         "cuisineId": "4",
                         "cuisineName": "Cuisine 4",
-                        "cuisineMenu": ["menu1", "menu2", "menu3"]
+                        "cuisineMenu": [{
+                            "id": 1,
+                            "name": "menu1",
+                            "price": 200
+                        }, {
+                            "id": 2,
+                            "name": "menu2",
+                            "price": 300
+                        }, {
+                            "id": 3,
+                            "name": "menu3",
+                            "price": 245
+                        }]
+                    },
+                    {
+                        "cuisineId": "5",
+                        "cuisineName": "Cuisine 5",
+                        "cuisineMenu": [{
+                            "id": 1,
+                            "name": "menu1",
+                            "price": 200
+                        }, {
+                            "id": 2,
+                            "name": "menu2",
+                            "price": 300
+                        }, {
+                            "id": 3,
+                            "name": "menu3",
+                            "price": 245
+                        }]
                     }
                 ]
 

@@ -148,7 +148,7 @@ class RestaurantInfoTab extends Component {
 
     render() {
        
-        console.log(this.props.abc)
+        // console.log(this.props.abc)
         return (
             <div style={styles.root}>
                 <AppBar position="static" color="default">
@@ -170,7 +170,7 @@ class RestaurantInfoTab extends Component {
                         {this.props.abc.map((item,i)=> {
                             return(
                                 <div>
-                                    <Grid container spacing={10}>
+                                    <Grid container spacing={8}>
                                          <Grid item xs={12} sm={12} md={6} lg={6} xl={3}>
                                             <h3>
                                                 <span style={{color: 'green', fontFamily: 'serif'}} >Contact Number: </span> <br /> {item.restaurant_number}
@@ -198,7 +198,7 @@ class RestaurantInfoTab extends Component {
                                          <Grid item xs={12} sm={12} md={6} lg={6} xl={3}>
                                             <b>Address: </b> <span style={{textTransform:"capitalize"}}> {`${item.restaurant_address} ${item.city}, ${item.country}`} </span>
                                             <span>
-                                                <iframe src="https://www.google.com" frameborder="0"></iframe>
+                                                
                                             </span>
                                          </Grid>
 

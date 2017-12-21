@@ -11,6 +11,8 @@ import Login from './components/loginButton';
 import UserDashboard from './components/userDashboard';
 import RestaurantsMenu from './components/restaurantsMenu';
 import OrderMenu from './components/orderMenu'
+// ================================================
+import adminDashboard from './admin/dashboard';
 // =====================================================================
 // MATERIAL-UI COMPONENTS
 // ======================================================================
@@ -49,6 +51,8 @@ class App extends Component {
          
           <Route path="/login" component={Login} />
           <Route path="/dashboard" component={UserDashboard} />
+
+          <Route exact path="/admin/dashboard" component={adminDashboard} />
 
         </div>
       </BrowserRouter>
