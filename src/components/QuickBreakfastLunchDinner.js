@@ -6,17 +6,25 @@ import Typography from 'material-ui/Typography';
 
 const styles = theme => ({
   root: {
-      width: '100%',
+      width: '80%',
       margin: '0px auto',
       marginTop: theme.spacing.unit * 3,
       marginBottom: theme.spacing.unit * 3,
       display: 'flex',
       flexWrap: 'wrap',
       minWidth: 300,
+       [
+      theme
+        .breakpoints
+        .down('md')
+    ]: {
+      width: '100%'
+    },
+    margin: '0 auto'
   },
   image: {
     position: 'relative',
-    height: 200,
+    height: 300,
     [theme.breakpoints.down('sm')]: {
       width: '100% !important', // Overrides inline-style
       height: 100,
@@ -77,6 +85,28 @@ const styles = theme => ({
     left: 'calc(50% - 9px)',
     transition: theme.transitions.create('opacity'),
   },
+  h2:{
+   marginLeft: 175,
+  fontSize: 48,
+  fontWeight: 'bold',
+  fontFamily: 'Robotto',
+  opacity: '0.6',
+  [
+     theme
+        .breakpoints
+        .down('sm')
+  ]:{
+    marginLeft: 0,
+    fontSize: 36,
+  },
+  [
+     theme
+        .breakpoints
+        .down('md')
+  ]:{
+    marginLeft: 0,
+  }
+  },
 });
 
 const images = [
@@ -112,7 +142,7 @@ function QuickBreakfastLunchDinner(props) {
 
   return (
       <div>
-    <h2>Quick Search</h2>
+    <h2 className={classes.h2}>Quick Search</h2>
     <div className={classes.root}>
       {images.map(image => (
         <ButtonBase

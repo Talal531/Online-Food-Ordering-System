@@ -11,12 +11,30 @@ import Login from './components/loginButton';
 import UserDashboard from './components/userDashboard';
 import RestaurantsMenu from './components/restaurantsMenu';
 import OrderMenu from './components/orderMenu'
+// ================================================
+import adminDashboard from './admin/dashboard';
 // =====================================================================
 // MATERIAL-UI COMPONENTS
+import {MuiThemeProvider, createMuiTheme} from 'material-ui/styles';
+import purple from 'material-ui/colors/purple';
+import green from 'material-ui/colors/green';
+import red from 'material-ui/colors/red';
 // ======================================================================
 const DB_URL = "http://localhost:3001/home";
 
 // ========================== HOME COMPONENT START=======================
+
+const theme = createMuiTheme({
+  palette: {
+    primary: purple, // Purple and green play nicely together.
+    secondary: {
+      ...green,
+      A400: '#00e677'
+    },
+    error: red
+  }
+});
+
 class App extends Component {
   state={
     slider: [],
@@ -33,8 +51,10 @@ class App extends Component {
               })
   
       }
+      
   render() {
     return(
+      <MuiThemeProvider theme={theme}>
       <BrowserRouter>
         <div>
           <Header/>
@@ -50,8 +70,11 @@ class App extends Component {
           <Route path="/login" component={Login} />
           <Route path="/dashboard" component={UserDashboard} />
 
+          <Route exact path="/admin/dashboard" component={adminDashboard} />
+
         </div>
       </BrowserRouter>
+      </MuiThemeProvider>
     );
   }
 }

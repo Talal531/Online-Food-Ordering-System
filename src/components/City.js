@@ -94,11 +94,33 @@ import ButtonBase from 'material-ui/ButtonBase';
 import Typography from 'material-ui/Typography';
 import {Link} from 'react-router-dom';
 const styles = theme => ({
+  h2:{
+   marginLeft: 175,
+  fontSize: 48,
+  fontWeight: 'bold',
+  fontFamily: 'Robotto',
+  opacity: '0.6',
+  [
+     theme
+        .breakpoints
+        .down('sm')
+  ]:{
+    marginLeft: 0,
+    fontSize: 36,
+  },
+  [
+     theme
+        .breakpoints
+        .down('md')
+  ]:{
+    marginLeft: 0,
+  }
+  },
   root: {
     display: 'flex',
     flexWrap: 'wrap',
     minWidth: 300,
-    width: '75%',
+    width: '80%',
     [
       theme
         .breakpoints
@@ -228,7 +250,7 @@ class City extends Component {
     return(
     <div>
       <div className="city_component_text">
-        <h2>
+        <h2 className={classes.h2}>
           Find Us in your City.. 
         </h2>
       </div>

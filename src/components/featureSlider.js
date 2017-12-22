@@ -61,11 +61,13 @@ import React, {Component} from 'react';
 import {withStyles} from 'material-ui/styles';
 import PropTypes from 'prop-types';
 import TextField from 'material-ui/TextField';
+import SearchIcon from 'material-ui-icons/Search';
+import IconButton from 'material-ui/IconButton';
 
 const styles = theme => ({
     divContainer:{
-        backgroundImage: `url("https://lorempixel.com/1349/500/food/4/")`,
-        height: '80vh',
+        backgroundImage: `url("https://lorempixel.com/1349/500/food/1/")`,
+        height: '60vh',
         backgroundSize: 'cover',
         backgroundPosition: 'center center',
         position: 'relative'
@@ -77,7 +79,7 @@ const styles = theme => ({
     mainCover:{
         padding:'15px',
         position: 'absolute',
-        top: '50%',
+        top: '20%',
         left: '50%',
         transform: 'translate(-50%, 50%)',
         width: '50%',
@@ -140,12 +142,14 @@ class FeatureSlider extends Component {
             <div className={classes.divContainer}>
             <div className={classes.mainCover}>
             <form className= {classes.container}>
+                <h2 style={{textAlign: 'center', color: '#fff', fontFamily: 'Monoton', fontSize: '32px'}}>GET YOUR BEST FOOD FROM YOUR FAVIOURITE RESTAURANTS</h2>
                 <input 
                     id="name"
                     type="text" 
                     placeholder="Enter your delivery location.."
                     className={classes.textField}/>
-                <button className={classes.button}>Search</button>
+                {/* <button className={classes.button}>Search</button> */}
+                <IconButton className={classes.button}><SearchIcon /> Search</IconButton>
             </form>
             </div>
         </div>

@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import {Link} from 'react-router-dom';
+import {Route, Link} from 'react-router-dom';
 
 
 const Filters_URL = "http://localhost:3001/RestaurantsFilters";
@@ -14,8 +14,11 @@ const Styles = {
 }
 
 class FiltersBy extends Component {
-
     render() {
+        const { restaurants } =this.props;
+        // console.log(this.props.cityName)
+        console.log(restaurants);
+
         return (
             <div>
                 <h6 style={Styles.h6}>{this.props.name}</h6>
@@ -29,7 +32,7 @@ class FiltersBy extends Component {
                                     to={{
                                     pathname: `${this.props.cityName.match.url}`,
                                     // pathname: `/${this.props.cityName}/restaurants`,
-                                    search: `?category-${index+1}`
+                                    search: `${item.replace(/\s+/g, '-').toLowerCase()}`
                                 }}>
                                     {item}
                                 </Link>
@@ -88,6 +91,10 @@ class Filters extends Component {
                     cityName={this.props.cityName}
                     restaurants={this.state.filterByCuisine}
                     name={this.state.nameCui}/>
+
+            {/* <Route path={this.props.cityName.location.search} render={()=>{
+                console.log(this .state.filtersByRestaurant)
+            }}/> */}
             </div>
         );
     }

@@ -31,6 +31,17 @@ const styles = theme => ({
     button:{
         fontSize: '16px'
     },
+    paper:{
+        padding: 10,
+        paddingBottom: 20,
+        marginBottom:15,
+
+    },
+    grid:{
+        margin: 0,
+        padding: 0,
+        width: 59
+    },
 })
 
 class Restaurants extends Component {
@@ -75,17 +86,32 @@ class Restaurants extends Component {
                                 textTransform: 'capitalize'
                                 }}
                             >
-                                {`${item.restaurant_name}`}
+                                {item.restaurant_name.replace(/-/g, ' ')}
                             </h3>
-                            <p>
-                                Lizards are a widespread group of squamate reptiles, with over 6,000 species,
-                                ranging across all continents except Antarctica
-                            </p>
+                            <p><b>Address: </b>{`${item.restaurant_address} ${item.city}, ${item.country}`}</p>
+                                <hr/>
+                            <div>
+                                    <p>
+                                        <b>Popular Cuisines:</b> 
+                                            {item.cuisines.map((menu,ind)=>{
+                                            return `${menu.cuisineName}, `
+                                            })}
+                                    </p>
+
+                                
+                                    <p>
+                                        <b>Cateogry: </b>
+                                            {item.restaurant_category}
+
+                                    </p>
+                               
+                            </div>
+                            
                         </CardContent>
 
                         <CardActions>
                         <Link to={`${this.props.match.url}/${item.restaurant_name}/orders`}>
-                            <Button className={classes.button} color="primary">
+                            <Button className={classes.button} color="primary" style={{backgroundColor: '#24a452cc', width:'100%', color:'#fff',}}>
                                 Order Online
                             </Button>
                             </Link>
@@ -106,12 +132,14 @@ class Restaurants extends Component {
                 width: '95%',
                 margin: '10px auto'
             }}>
+            <Paper className={classes.paper}>
                 <h2>Best Restaurants in&nbsp;
                     <span
                         style={{
                         textTransform: 'capitalize',
                     }}>{this.props.match.params.resCity}</span>
                 </h2>
+            </Paper>
 
                 {/* <Grid container className={classes.root}>
                     <Grid item sm hidden={{ xlUp : true}}>
