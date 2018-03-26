@@ -1,0 +1,8 @@
+.sidebar_container {
+  height: 400px;
+  text-align: center;
+}
+.is-active {
+  width: 400px;
+  border:1px solid black
+}
