@@ -66,7 +66,7 @@ const SideBarMenu = [
     labelColor: "grey",
     labelQuantity: "34",
     iconName: "settings",
-    linkTo: "/setting",
+    linkTo: "/settings",
   },
   {
     name: "signout", //use small letters

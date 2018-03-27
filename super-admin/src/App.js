@@ -9,6 +9,7 @@ import RestaurantDetails from './components/restaurants/restaurantDetails';
 import Dashboard from './components/dashboard';
 import Orders from './components/orders';
 import Users from './components/users/users';
+import Settings from './components/settings.js';
 
 import  { Grid } from 'semantic-ui-react';
 
@@ -23,11 +24,11 @@ class App extends Component {
       <HeaderBar />
         <Grid stackable>
           <Grid.Row stretched>
-            <Grid.Column width={3} computer={3} /*mobile={16}*/ largeScreen={3} color="teal" style={{paddingTop: '0px'}}>
+            <Grid.Column width={3} computer={3} /*mobile={16}*/ largeScreen={3}  style={{paddingTop: '0px'}}>
               <SideBar />
             </Grid.Column>
 
-            <Grid.Column width={13} color="blue">
+            <Grid.Column width={13} >
                 <div>
                   <Route exact path = "/dashboard" component = {Dashboard} />
                   <Route path = "/admins" component = {Admins} />
@@ -35,6 +36,7 @@ class App extends Component {
                   <Route path = "restaurants/details" component = {RestaurantDetails} />
                   <Route path = "/orders" component = {Orders} />
                   <Route path = "/users" component = {Users} />
+                  <Route path = "/settings" component = {Settings} />
                 </div>
             </Grid.Column>
           </Grid.Row>
